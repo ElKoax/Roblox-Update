@@ -1,0 +1,877 @@
+using r_addinfo_typedef = int(__cdecl*)(int a1);
+r_addinfo_typedef r_addinfo = (r_addinfo_typedef)(x(0x013A1050));
+
+using r_adjuststack_typedef = int(__cdecl*)(int a1);
+r_adjuststack_typedef r_adjuststack = (r_adjuststack_typedef)(x(0x01395E30));
+
+using r_arith_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_arith_typedef r_arith = (r_arith_typedef)(x(0x013AD130));
+
+using r_aux_upvalue_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_aux_upvalue_typedef r_aux_upvalue = (r_aux_upvalue_typedef)(x(0x013936D0));
+
+using r_auxgetinfo_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4, int a5);
+r_auxgetinfo_typedef r_auxgetinfo = (r_auxgetinfo_typedef)(x(0x013A10D0));
+
+using r_auxresume_typedef = int(__thiscall*)(std::uintptr_t a1, int a2, int a3);
+r_auxresume_typedef r_auxresume = (r_auxresume_typedef)(x(0x013A2C80));
+
+using r_call_bintm_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_call_bintm_typedef r_call_bintm = (r_call_bintm_typedef)(x(0x013ACA10));
+
+using r_call_ordertm_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_call_ordertm_typedef r_call_ordertm = (r_call_ordertm_typedef)(x(0x013ACAB0));
+
+using r_calltmres_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4, int a5);
+r_calltmres_typedef r_calltmres = (r_calltmres_typedef)(x(0x013AC8C0));
+
+using r_close_state_typedef = int(__cdecl*)(int a1);
+r_close_state_typedef r_close_state = (r_close_state_typedef)(x(0x013A0A70));
+
+using r_currentline_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_currentline_typedef r_currentline = (r_currentline_typedef)(x(0x013A1290));
+
+using r_err_geterrorstring_typedef = int(__cdecl*)(int a1);
+r_err_geterrorstring_typedef r_err_geterrorstring = (r_err_geterrorstring_typedef)(x(0x00939660));
+
+using r_f_call_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_f_call_typedef r_f_call = (r_f_call_typedef)unprotect(x(0x01393760));
+
+using r_f_luaopen_typedef = int(__cdecl*)(int a1);
+r_f_luaopen_typedef r_f_luaopen = (r_f_luaopen_typedef)(x(0x013A0B10));
+
+using r_findfirstchild_typedef = int(__thiscall*)(int a1, int a2);
+r_findfirstchild_typedef r_findfirstchild = (r_findfirstchild_typedef)(x(0x0067C290));
+
+using r_findfirstchildofclass_typedef = int(__stdcall*)(int a1, int a2);
+r_findfirstchildofclass_typedef r_findfirstchildofclass = (r_findfirstchildofclass_typedef)(x(0x0067C460));
+
+using r_findlocal_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_findlocal_typedef r_findlocal = (r_findlocal_typedef)(x(0x013AAF40));
+
+using r_fireclickdetector_typedef = int(__thiscall*)(std::uintptr_t a1, float a2, int a3);
+r_fireclickdetector_typedef r_fireclickdetector = (r_fireclickdetector_typedef)(x(0x00C52850));
+
+using r_flog_getvalue_typedef = int(__cdecl*)(int a1, int a2, const char* a3);
+r_flog_getvalue_typedef r_flog_getvalue = (r_flog_getvalue_typedef)(x(0x01597FC0));
+
+using r_flog_setvalue_typedef = int(__cdecl*)(int a1, int a2, int a3, const char* a4);
+r_flog_setvalue_typedef r_flog_setvalue = (r_flog_setvalue_typedef)(x(0x01598780));
+
+using r_getdatamodel_typedef = int(__thiscall*)(int a1, int a2);
+r_getdatamodel_typedef r_getdatamodel = (r_getdatamodel_typedef)(x(0x00F9B0E0));
+
+using r_getdatamodel2_typedef = int(__cdecl*)();
+r_getdatamodel2_typedef r_getdatamodel2 = (r_getdatamodel2_typedef)(x(0x00F9AF90));
+
+using r_getfunc_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_getfunc_typedef r_getfunc = (r_getfunc_typedef)(x(0x013A2430));
+
+using r_getjobsbyname_typedef = int(__cdecl*)(int a1, int a2);
+r_getjobsbyname_typedef r_getjobsbyname = (r_getjobsbyname_typedef)(x(0x01024C10));
+
+using r_getnamecallmethod_typedef = int(__cdecl*)(int a1);
+r_getnamecallmethod_typedef r_getnamecallmethod = (r_getnamecallmethod_typedef)(x(0x01395EA0));
+
+using r_grabscriptcontext_typedef = int(__thiscall*)(int a1, const char* a2, int a3);
+r_grabscriptcontext_typedef r_grabscriptcontext = (r_grabscriptcontext_typedef)(x(0x005E59E0));
+
+using r_grabglobalstateindex_typedef = int(__thiscall*)(int a1, int a2);
+r_grabglobalstateindex_typedef r_grabglobalstateindex = (r_grabglobalstateindex_typedef)(x(0x0079A090));
+
+using r_growci_typedef = int(__cdecl*)(int a1);
+r_growci_typedef r_growci = (r_growci_typedef)(x(0x01396AB0));
+
+using r_hashnum_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_hashnum_typedef r_hashnum = (r_hashnum_typedef)(x(0x013AB570));
+
+using r_index2adr_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_index2adr_typedef r_index2adr = (r_index2adr_typedef)(x(0x013937B0));
+
+using r_luaopen_base_typedef = int(__cdecl*)(int a1);
+r_luaopen_base_typedef r_luaopen_base = (r_luaopen_base_typedef)(x(0x013A2840));
+
+using r_luaopen_table_typedef = int(__cdecl*)(int a1);
+r_luaopen_table_typedef r_luaopen_table = (r_luaopen_table_typedef)(x(0x013A2F50));
+
+using r_luaopen_bit32_typedef = int(__cdecl*)(int a1);
+r_luaopen_bit32_typedef r_luaopen_bit32 = (r_luaopen_bit32_typedef)(x(0x013A7780));
+
+using r_lua_call_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_call_typedef r_lua_call = (r_lua_call_typedef)unprotect(x(0x013938D0));
+
+using r_lua_checkstack_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_checkstack_typedef r_lua_checkstack = (r_lua_checkstack_typedef)unprotect(x(0x01394C10));
+
+using r_lua_close_typedef = int(__cdecl*)(int a1);
+r_lua_close_typedef r_lua_close = (r_lua_close_typedef)(x(0x013A0C80));
+
+using r_lua_concat_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_concat_typedef r_lua_concat = (r_lua_concat_typedef)unprotect(x(0x013939E0));
+
+using r_lua_createtable_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_createtable_typedef r_lua_createtable = (r_lua_createtable_typedef)unprotect(x(0x01393A90));
+
+using r_lua_error_typedef = int(__thiscall*)(int a1);
+r_lua_error_typedef r_lua_error = (r_lua_error_typedef)(x(0x01393BC0));
+
+using r_lua_freeobj_typedef = int(__cdecl*)(int a1);
+r_lua_freeobj_typedef r_lua_freeobj = (r_lua_freeobj_typedef)(x(0x013A9840));
+
+using r_lua_gc_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_gc_typedef r_lua_gc = (r_lua_gc_typedef)(x(0x01393BD0));
+
+using r_lua_getargument_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_getargument_typedef r_lua_getargument = (r_lua_getargument_typedef)unprotect(x(0x013A1760));
+
+using r_lua_getfenv_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_getfenv_typedef r_lua_getfenv = (r_lua_getfenv_typedef)unprotect(x(0x01393CF0));
+
+using r_lua_getfield_typedef = int(__stdcall*)(std::uintptr_t a1, int a2, const char* a3);
+r_lua_getfield_typedef r_lua_getfield = (r_lua_getfield_typedef)unprotect(x(0x01393D90));
+
+using r_lua_getinfo_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_getinfo_typedef r_lua_getinfo = (r_lua_getinfo_typedef)unprotect(x(0x013A1820));
+
+using r_lua_getlocal_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_getlocal_typedef r_lua_getlocal = (r_lua_getlocal_typedef)unprotect(x(0x013A18F0));
+
+using r_lua_getmetatable_typedef = int(__stdcall*)(std::uintptr_t a1, int a2);
+r_lua_getmetatable_typedef r_lua_getmetatable = (r_lua_getmetatable_typedef)(x(0x01393E40));
+
+using r_lua_getstack_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_getstack_typedef r_lua_getstack = (r_lua_getstack_typedef)(x(0x013A19B0));
+
+using r_lua_gettable_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_gettable_typedef r_lua_gettable = (r_lua_gettable_typedef)unprotect(x(0x01393F00));
+
+using r_lua_gettop_typedef = int(__cdecl*)(int a1);
+r_lua_gettop_typedef r_lua_gettop = (r_lua_gettop_typedef)(x(0x01393F80));
+
+using r_lua_getupvalue_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_getupvalue_typedef r_lua_getupvalue = (r_lua_getupvalue_typedef)unprotect(x(0x01393FA0));
+
+using r_lua_insert_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_insert_typedef r_lua_insert = (r_lua_insert_typedef)unprotect(x(0x01394030));
+
+using r_lua_iscfunction_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_iscfunction_typedef r_lua_iscfunction = (r_lua_iscfunction_typedef)(x(0x01394110));
+
+using r_lua_isnumber_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_isnumber_typedef r_lua_isnumber = (r_lua_isnumber_typedef)(x(0x01394160));
+
+using r_lua_isstring_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_isstring_typedef r_lua_isstring = (r_lua_isstring_typedef)(x(0x013941C0));
+
+using r_lua_isuserdata_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_isuserdata_typedef r_lua_isuserdata = (r_lua_isuserdata_typedef)(x(0x013940C0));
+
+using r_lua_lessthan_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_lessthan_typedef r_lua_lessthan = (r_lua_lessthan_typedef)unprotect(x(0x01394210));
+
+using r_lua_newstate_typedef = int(__cdecl*)(int a1);
+r_lua_newstate_typedef r_lua_newstate = (r_lua_newstate_typedef)(x(0x013A0CB0));
+
+using r_lua_newthread_typedef = int(__cdecl*)(int a1);
+r_lua_newthread_typedef r_lua_newthread = (r_lua_newthread_typedef)unprotect(x(0x013942C0));
+
+using r_lua_newuserdata_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_newuserdata_typedef r_lua_newuserdata = (r_lua_newuserdata_typedef)unprotect(x(0x01394350));
+
+using r_lua_next_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_next_typedef r_lua_next = (r_lua_next_typedef)unprotect(x(0x013943D0));
+
+using r_lua_objlen_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_objlen_typedef r_lua_objlen = (r_lua_objlen_typedef)(x(0x01394460));
+
+using r_lua_pcall_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_lua_pcall_typedef r_lua_pcall = (r_lua_pcall_typedef)unprotect(x(0x01394540));
+
+using r_lua_pushboolean_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_pushboolean_typedef r_lua_pushboolean = (r_lua_pushboolean_typedef)unprotect(x(0x01394600));
+
+using r_lua_pushcclosure_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4, int a5);
+r_lua_pushcclosure_typedef r_lua_pushcclosure = (r_lua_pushcclosure_typedef)unprotect(x(0x01394650));
+
+using r_lua_pushfstring_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_pushfstring_typedef r_lua_pushfstring = (r_lua_pushfstring_typedef)(x(0x01394730));
+
+using r_lua_pushinteger_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_pushinteger_typedef r_lua_pushinteger = (r_lua_pushinteger_typedef)unprotect(x(0x013947A0));
+
+using r_lua_pushlightuserdata_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_pushlightuserdata_typedef r_lua_pushlightuserdata = (r_lua_pushlightuserdata_typedef)unprotect(x(0x01394800));
+
+using r_lua_pushlstring_typedef = int(__cdecl*)(std::uintptr_t a1, const char* a2, int a3);
+r_lua_pushlstring_typedef r_lua_pushlstring = (r_lua_pushlstring_typedef)unprotect(x(0x01394850));
+
+using r_lua_pushnil_typedef = int(__cdecl*)(int a1);
+r_lua_pushnil_typedef r_lua_pushnil = (r_lua_pushnil_typedef)unprotect(x(0x013948D0));
+
+using r_lua_pushnumber_typedef = int(__thiscall*)(std::uintptr_t a1, int a2);
+r_lua_pushnumber_typedef r_lua_pushnumber = (r_lua_pushnumber_typedef)unprotect(x(0x01394920));
+
+using r_lua_pushstring_typedef = int(__stdcall*)(std::uintptr_t a1, const char* a2);
+r_lua_pushstring_typedef r_lua_pushstring = (r_lua_pushstring_typedef)unprotect(x(0x01394980));
+
+using r_lua_pushthread_typedef = int(__cdecl*)(int a1);
+r_lua_pushthread_typedef r_lua_pushthread = (r_lua_pushthread_typedef)unprotect(x(0x01394A60));
+
+using r_lua_pushvalue_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_pushvalue_typedef r_lua_pushvalue = (r_lua_pushvalue_typedef)unprotect(x(0x01394B30));
+
+using r_lua_pushvfstring_typedef = int(__cdecl*)(std::uintptr_t a1, const char* a2, char* a3);
+r_lua_pushvfstring_typedef r_lua_pushvfstring = (r_lua_pushvfstring_typedef)(x(0x01394BA0));
+
+using r_lua_rawequal_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_rawequal_typedef r_lua_rawequal = (r_lua_rawequal_typedef)(x(0x01394C80));
+
+using r_lua_rawget_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_rawget_typedef r_lua_rawget = (r_lua_rawget_typedef)unprotect(x(0x01394D00));
+
+using r_lua_rawgeti_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_rawgeti_typedef r_lua_rawgeti = (r_lua_rawgeti_typedef)unprotect(x(0x01394E30));
+
+using r_lua_rawset_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_rawset_typedef r_lua_rawset = (r_lua_rawset_typedef)unprotect(x(0x01394EB0));
+
+using r_lua_rawseti_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_rawseti_typedef r_lua_rawseti = (r_lua_rawseti_typedef)unprotect(x(0x01394F80));
+
+using r_lua_rawvalue_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_rawvalue_typedef r_lua_rawvalue = (r_lua_rawvalue_typedef)(x(0x01393880));
+
+using r_lua_remove_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_remove_typedef r_lua_remove = (r_lua_remove_typedef)unprotect(x(0x01395050));
+
+using r_lua_replace_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_replace_typedef r_lua_replace = (r_lua_replace_typedef)unprotect(x(0x013950E0));
+
+using r_lua_resume_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_resume_typedef r_lua_resume = (r_lua_resume_typedef)unprotect(x(0x01397060));
+
+using r_lua_setfenv_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_setfenv_typedef r_lua_setfenv = (r_lua_setfenv_typedef)(x(0x013951F0));
+
+using r_lua_setfield_typedef = int(__stdcall*)(std::uintptr_t a1, int a2, const char* a3);
+r_lua_setfield_typedef r_lua_setfield = (r_lua_setfield_typedef)unprotect(x(0x013952D0));
+
+using r_lua_setlocal_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_setlocal_typedef r_lua_setlocal = (r_lua_setlocal_typedef)unprotect(x(0x013A1A40));
+
+using r_lua_setmetatable_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_setmetatable_typedef r_lua_setmetatable = (r_lua_setmetatable_typedef)unprotect(x(0x01395380));
+
+using r_lua_setreadonly_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_setreadonly_typedef r_lua_setreadonly = (r_lua_setreadonly_typedef)unprotect(x(0x01395490));
+
+using r_lua_setsafeenv_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_setsafeenv_typedef r_lua_setsafeenv = (r_lua_setsafeenv_typedef)unprotect(x(0x01395500));
+
+using r_lua_settable_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_settable_typedef r_lua_settable = (r_lua_settable_typedef)unprotect(x(0x01395570));
+
+using r_lua_settop_typedef = int(__fastcall*)(std::uintptr_t a1, int a2);
+r_lua_settop_typedef r_lua_settop = (r_lua_settop_typedef)unprotect(x(0x013955F0));
+
+using r_lua_setupvalue_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_setupvalue_typedef r_lua_setupvalue = (r_lua_setupvalue_typedef)unprotect(x(0x01395670));
+
+using r_lua_toboolean_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_toboolean_typedef r_lua_toboolean = (r_lua_toboolean_typedef)(x(0x01395730));
+
+using r_lua_tointeger_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_tointeger_typedef r_lua_tointeger = (r_lua_tointeger_typedef)(x(0x01395790));
+
+using r_lua_tolstring_typedef = int(__fastcall*)(std::uintptr_t a1, int a2, int a3);
+r_lua_tolstring_typedef r_lua_tolstring = (r_lua_tolstring_typedef)unprotect(x(0x01395810));
+
+using r_lua_tonumber_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_tonumber_typedef r_lua_tonumber = (r_lua_tonumber_typedef)(x(0x01395940));
+
+using r_lua_topointer_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_topointer_typedef r_lua_topointer = (r_lua_topointer_typedef)(x(0x013959D0));
+
+using r_lua_tostring_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_tostring_typedef r_lua_tostring = (r_lua_tostring_typedef)(x(0x01395A90));
+
+using r_lua_tothread_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_tothread_typedef r_lua_tothread = (r_lua_tothread_typedef)(x(0x01395B30));
+
+using r_lua_tounsignedx_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_tounsignedx_typedef r_lua_tounsignedx = (r_lua_tounsignedx_typedef)(x(0x01395B80));
+
+using r_lua_touserdata_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_touserdata_typedef r_lua_touserdata = (r_lua_touserdata_typedef)(x(0x01395C10));
+
+using r_lua_type_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_type_typedef r_lua_type = (r_lua_type_typedef)(x(0x01395D00));
+
+using r_lua_typename_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_typename_typedef r_lua_typename = (r_lua_typename_typedef)(x(0x01395D40));
+
+using r_lua_xmove_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lua_xmove_typedef r_lua_xmove = (r_lua_xmove_typedef)unprotect(x(0x01395DB0));
+
+using r_lua_yeild_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lua_yeild_typedef r_lua_yeild = (r_lua_yeild_typedef)unprotect(x(0x013972C0));
+
+using r_luaa_pushobject_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luaa_pushobject_typedef r_luaa_pushobject = (r_luaa_pushobject_typedef)(x(0x01393860));
+
+using r_luab_auxwrap_typedef = int(__cdecl*)(int a1);
+r_luab_auxwrap_typedef r_luab_auxwrap = (r_luab_auxwrap_typedef)(x(0x013A2D00));
+
+using r_luac_barrierback_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luac_barrierback_typedef r_luac_barrierback = (r_luac_barrierback_typedef)(x(0x013A98C0));
+
+using r_luac_barrierf_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luac_barrierf_typedef r_luac_barrierf = (r_luac_barrierf_typedef)(x(0x013A98E0));
+
+using r_luac_fullgc_typedef = int(__cdecl*)(int a1);
+r_luac_fullgc_typedef r_luac_fullgc = (r_luac_fullgc_typedef)(x(0x013A9B20));
+
+using r_luac_link_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luac_link_typedef r_luac_link = (r_luac_link_typedef)(x(0x013A9C00));
+
+using r_luac_linkupval_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luac_linkupval_typedef r_luac_linkupval = (r_luac_linkupval_typedef)(x(0x013A9C30));
+
+using r_luac_step_typedef = int(__cdecl*)(int a1);
+r_luac_step_typedef r_luac_step = (r_luac_step_typedef)(x(0x013A9CB0));
+
+using r_luad_call_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luad_call_typedef r_luad_call = (r_luad_call_typedef)(x(0x01396A10));
+
+using r_luad_growstack_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luad_growstack_typedef r_luad_growstack = (r_luad_growstack_typedef)(x(0x01396B10));
+
+using r_luad_pcall_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4, int a5);
+r_luad_pcall_typedef r_luad_pcall = (r_luad_pcall_typedef)(x(0x01396B40));
+
+using r_luad_poscall_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luad_poscall_typedef r_luad_poscall = (r_luad_poscall_typedef)(x(0x013A0530));
+
+using r_luad_precall_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luad_precall_typedef r_luad_precall = (r_luad_precall_typedef)(x(0x013A05B0));
+
+using r_luad_rawrunprotected_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luad_rawrunprotected_typedef r_luad_rawrunprotected = (r_luad_rawrunprotected_typedef)(x(0x01396C70));
+
+using r_luad_reallocci_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luad_reallocci_typedef r_luad_reallocci = (r_luad_reallocci_typedef)(x(0x01396DB0));
+
+using r_luad_reallocstack_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luad_reallocstack_typedef r_luad_reallocstack = (r_luad_reallocstack_typedef)(x(0x01396E30));
+
+using r_luad_seterrorObj_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luad_seterrorObj_typedef r_luad_seterrorObj = (r_luad_seterrorObj_typedef)(x(0x01396F40));
+
+using r_luad_throw_typedef = int(__fastcall*)(std::uintptr_t a1, int a2);
+r_luad_throw_typedef r_luad_throw = (r_luad_throw_typedef)(x(0x01396FB0));
+
+using r_luae_freethread_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luae_freethread_typedef r_luae_freethread = (r_luae_freethread_typedef)(x(0x013A0B90));
+
+using r_luae_newthread_typedef = int(__cdecl*)(int a1);
+r_luae_newthread_typedef r_luae_newthread = (r_luae_newthread_typedef)(x(0x013A0C00));
+
+using r_luaf_close_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luaf_close_typedef r_luaf_close = (r_luaf_close_typedef)(x(0x013AACE0));
+
+using r_luaf_findupval_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luaf_findupval_typedef r_luaf_findupval = (r_luaf_findupval_typedef)(x(0x013AAD70));
+
+using r_luaf_freeproto_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luaf_freeproto_typedef r_luaf_freeproto = (r_luaf_freeproto_typedef)(x(0x013AAE40));
+
+using r_luaf_newcclosure_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luaf_newcclosure_typedef r_luaf_newcclosure = (r_luaf_newcclosure_typedef)(x(0x013AAFA0));
+
+using r_luaf_newlclosure_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_luaf_newlclosure_typedef r_luaf_newlclosure = (r_luaf_newlclosure_typedef)(x(0x013AB000));
+
+using r_luaf_newproto_typedef = int(__cdecl*)(int a1);
+r_luaf_newproto_typedef r_luaf_newproto = (r_luaf_newproto_typedef)(x(0x013AB070));
+
+using r_luag_aritherror_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_luag_aritherror_typedef r_luag_aritherror = (r_luag_aritherror_typedef)(x(0x013A1320));
+
+using r_luag_breakpoint_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_luag_breakpoint_typedef r_luag_breakpoint = (r_luag_breakpoint_typedef)(x(0x013A1390));
+
+using r_luag_concaterror_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luag_concaterror_typedef r_luag_concaterror = (r_luag_concaterror_typedef)(x(0x013A1520));
+
+using r_luag_forerrorl_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, const char* a3);
+r_luag_forerrorl_typedef r_luag_forerrorl = (r_luag_forerrorl_typedef)(x(0x013A1560));
+
+using r_luag_getline_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luag_getline_typedef r_luag_getline = (r_luag_getline_typedef)(x(0x013A1590));
+
+using r_luag_indexerror_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luag_indexerror_typedef r_luag_indexerror = (r_luag_indexerror_typedef)(x(0x013A15D0));
+
+using r_luag_ordererror_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luag_ordererror_typedef r_luag_ordererror = (r_luag_ordererror_typedef)(x(0x013A1670));
+
+using r_luag_runerror_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luag_runerror_typedef r_luag_runerror = (r_luag_runerror_typedef)(x(0x013A1700));
+
+using r_luag_typeerror_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luag_typeerror_typedef r_luag_typeerror = (r_luag_typeerror_typedef)(x(0x013AD750));
+
+using r_luah_clone_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luah_clone_typedef r_luah_clone = (r_luah_clone_typedef)(x(0x013AB660));
+
+using r_luah_free_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luah_free_typedef r_luah_free = (r_luah_free_typedef)(x(0x013AB110));
+
+using r_luah_get_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luah_get_typedef r_luah_get = (r_luah_get_typedef)(x(0x013AB7E0));
+
+using r_luah_getn_typedef = int(__cdecl*)(int a1);
+r_luah_getn_typedef r_luah_getn = (r_luah_getn_typedef)(x(0x013AB890));
+
+using r_luah_getnum_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luah_getnum_typedef r_luah_getnum = (r_luah_getnum_typedef)(x(0x013AB910));
+
+using r_luah_getstr_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luah_getstr_typedef r_luah_getstr = (r_luah_getstr_typedef)(x(0x013AB9F0));
+
+using r_luah_new_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luah_new_typedef r_luah_new = (r_luah_new_typedef)(x(0x013ABA60));
+
+using r_luah_next_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luah_next_typedef r_luah_next = (r_luah_next_typedef)(x(0x013ABAD0));
+
+using r_luah_resizearray_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luah_resizearray_typedef r_luah_resizearray = (r_luah_resizearray_typedef)(x(0x013ABCB0));
+
+using r_luah_set_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luah_set_typedef r_luah_set = (r_luah_set_typedef)(x(0x013ABD00));
+
+using r_luah_setnum_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luah_setnum_typedef r_luah_setnum = (r_luah_setnum_typedef)(x(0x013ABE20));
+
+using r_luah_setstr_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luah_setstr_typedef r_luah_setstr = (r_luah_setstr_typedef)(x(0x013ABE90));
+
+using r_lual_addlstring_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lual_addlstring_typedef r_lual_addlstring = (r_lual_addlstring_typedef)(x(0x01395F20));
+
+using r_lual_addvalue_typedef = int(__cdecl*)(int a1);
+r_lual_addvalue_typedef r_lual_addvalue = (r_lual_addvalue_typedef)(x(0x01395F90));
+
+using r_lual_argerror_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lual_argerror_typedef r_lual_argerror = (r_lual_argerror_typedef)(x(0x01396020));
+
+using r_lual_buffinit_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lual_buffinit_typedef r_lual_buffinit = (r_lual_buffinit_typedef)(x(0x01396070));
+
+using r_lual_checkany_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lual_checkany_typedef r_lual_checkany = (r_lual_checkany_typedef)(x(0x01396120));
+
+using r_lual_checkinteger_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lual_checkinteger_typedef r_lual_checkinteger = (r_lual_checkinteger_typedef)(x(0x01396160));
+
+using r_lual_checklstring_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lual_checklstring_typedef r_lual_checklstring = (r_lual_checklstring_typedef)(x(0x01396190));
+
+using r_lual_checknumber_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lual_checknumber_typedef r_lual_checknumber = (r_lual_checknumber_typedef)(x(0x013961C0));
+
+using r_lual_checkstack_typedef = int(__thiscall*)(std::uintptr_t a1, int a2, int a3);
+r_lual_checkstack_typedef r_lual_checkstack = (r_lual_checkstack_typedef)(x(0x013961F0));
+
+using r_lual_checktype_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lual_checktype_typedef r_lual_checktype = (r_lual_checktype_typedef)(x(0x01396230));
+
+using r_lual_checkunsigned_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lual_checkunsigned_typedef r_lual_checkunsigned = (r_lual_checkunsigned_typedef)(x(0x01396260));
+
+using r_lual_error_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lual_error_typedef r_lual_error = (r_lual_error_typedef)(x(0x01396290));
+
+using r_lual_findtable_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_lual_findtable_typedef r_lual_findtable = (r_lual_findtable_typedef)(x(0x013962C0));
+
+using r_lual_getmetafield_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lual_getmetafield_typedef r_lual_getmetafield = (r_lual_getmetafield_typedef)(x(0x013963B0));
+
+using r_lual_newmetatable_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lual_newmetatable_typedef r_lual_newmetatable = (r_lual_newmetatable_typedef)(x(0x01396410));
+
+using r_lual_optinteger_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lual_optinteger_typedef r_lual_optinteger = (r_lual_optinteger_typedef)(x(0x01396470));
+
+using r_lual_optlstring_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, const char* a3, int a4);
+r_lual_optlstring_typedef r_lual_optlstring = (r_lual_optlstring_typedef)(x(0x013964C0));
+
+using r_lual_prepbuffer_typedef = int(__cdecl*)(int a1);
+r_lual_prepbuffer_typedef r_lual_prepbuffer = (r_lual_prepbuffer_typedef)(x(0x013965A0));
+
+using r_lual_pushresult_typedef = int(__cdecl*)(int a1);
+r_lual_pushresult_typedef r_lual_pushresult = (r_lual_pushresult_typedef)(x(0x013965E0));
+
+using r_lual_ref_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lual_ref_typedef r_lual_ref = (r_lual_ref_typedef)(x(0x01396620));
+
+using r_lual_register_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lual_register_typedef r_lual_register = (r_lual_register_typedef)(x(0x013966E0));
+
+using r_lual_typeerror_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lual_typeerror_typedef r_lual_typeerror = (r_lual_typeerror_typedef)(x(0x013967D0));
+
+using r_lual_unref_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_lual_unref_typedef r_lual_unref = (r_lual_unref_typedef)(x(0x01396870));
+
+using r_lual_where_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_lual_where_typedef r_lual_where = (r_lual_where_typedef)(x(0x013968D0));
+
+using r_luam_realloc_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_luam_realloc_typedef r_luam_realloc = (r_luam_realloc_typedef)(x(0x013ADB80));
+
+using r_luam_realloc__typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luam_realloc__typedef r_luam_realloc_ = (r_luam_realloc__typedef)(x(0x013ADA40));
+
+using r_luam_toobig_typedef = int(__thiscall*)(int a1);
+r_luam_toobig_typedef r_luam_toobig = (r_luam_toobig_typedef)(x(0x013ADC90));
+
+using r_luao_chunkid_typedef = int(__cdecl*)(char* a1, const char* a2, int a3);
+r_luao_chunkid_typedef r_luao_chunkid = (r_luao_chunkid_typedef)(x(0x013975B0));
+
+using r_luao_pushfstring_typedef = int(__cdecl*)(std::uintptr_t a1, const char* a2, ...);
+r_luao_pushfstring_typedef r_luao_pushfstring = (r_luao_pushfstring_typedef)(x(0x01397730));
+
+using r_luao_pushvfstring_typedef = int(__cdecl*)(std::uintptr_t a1, const char* a2, char* a3);
+r_luao_pushvfstring_typedef r_luao_pushvfstring = (r_luao_pushvfstring_typedef)(x(0x013977D0));
+
+using r_luao_rawequalKey_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luao_rawequalKey_typedef r_luao_rawequalKey = (r_luao_rawequalKey_typedef)(x(0x01397870));
+
+using r_luao_rawequalobj_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luao_rawequalobj_typedef r_luao_rawequalobj = (r_luao_rawequalobj_typedef)(x(0x013978F0));
+
+using r_luao_str2d_typedef = int(__cdecl*)(const char* a1, double* a2);
+r_luao_str2d_typedef r_luao_str2d = (r_luao_str2d_typedef)(x(0x01397970));
+
+using r_luas_newlstr_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luas_newlstr_typedef r_luas_newlstr = (r_luas_newlstr_typedef)(x(0x013AB180));
+
+using r_luas_newudata_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luas_newudata_typedef r_luas_newudata = (r_luas_newudata_typedef)(x(0x013AB280));
+
+using r_luas_resize_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luas_resize_typedef r_luas_resize = (r_luas_resize_typedef)(x(0x013AB2D0));
+
+using r_luat_gettm_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luat_gettm_typedef r_luat_gettm = (r_luat_gettm_typedef)(x(0x013AD720));
+
+using r_luat_objtypename_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luat_objtypename_typedef r_luat_objtypename = (r_luat_objtypename_typedef)(x(0x013AD870));
+
+using r_luau_backtrace_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luau_backtrace_typedef r_luau_backtrace = (r_luau_backtrace_typedef)(x(0x0139F340));
+
+using r_luau_betavm_typedef = int(__cdecl*)(int a1);
+r_luau_betavm_typedef r_luau_betavm = (r_luau_betavm_typedef)(x(0x0139B730));
+
+using r_luau_callhook_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luau_callhook_typedef r_luau_callhook = (r_luau_callhook_typedef)unprotect(x(0x0139F8F0));
+
+using r_luau_calltm_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luau_calltm_typedef r_luau_calltm = (r_luau_calltm_typedef)(x(0x0139F7D0));
+
+using r_luau_deserialize_typedef = int(__cdecl*)(std::uintptr_t a1, const char* a2, const char* a3, int a4);
+r_luau_deserialize_typedef r_luau_deserialize = (r_luau_deserialize_typedef)(x(0x0139FA80));
+
+using r_luau_execute_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4, int a5, int a6);
+r_luau_execute_typedef r_luau_execute = (r_luau_execute_typedef)(x(0x013C4D40));
+
+using r_luau_loopforg_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luau_loopforg_typedef r_luau_loopforg = (r_luau_loopforg_typedef)(x(0x013A04D0));
+
+using r_luau_prepareforn_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_luau_prepareforn_typedef r_luau_prepareforn = (r_luau_prepareforn_typedef)(x(0x013A0740));
+
+using r_luau_resolveimport_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4, int a5);
+r_luau_resolveimport_typedef r_luau_resolveimport = (r_luau_resolveimport_typedef)(x(0x013A07E0));
+
+using r_luau_tryfunctm_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luau_tryfunctm_typedef r_luau_tryfunctm = (r_luau_tryfunctm_typedef)(x(0x013A0980));
+
+using r_luav_concat_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luav_concat_typedef r_luav_concat = (r_luav_concat_typedef)(x(0x013ACB30));
+
+using r_luav_doarith_typedef = int(__thiscall*)(std::uintptr_t a1, int a2, int a3, int a4, int a5, int a6);
+r_luav_doarith_typedef r_luav_doarith = (r_luav_doarith_typedef)(x(0x013ACE80));
+
+using r_luav_dolen_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luav_dolen_typedef r_luav_dolen = (r_luav_dolen_typedef)(x(0x013AD080));
+
+using r_luav_execute_typedef = int(__cdecl*)(int a1);
+r_luav_execute_typedef r_luav_execute = (r_luav_execute_typedef)(x(0x01397A80));
+
+using r_luav_gettable_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4, int a5);
+r_luav_gettable_typedef r_luav_gettable = (r_luav_gettable_typedef)(x(0x013AD270));
+
+using r_luav_gettable_opt_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_luav_gettable_opt_typedef r_luav_gettable_opt = (r_luav_gettable_opt_typedef)(x(0x013AD250));
+
+using r_luav_lessequal_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luav_lessequal_typedef r_luav_lessequal = (r_luav_lessequal_typedef)(x(0x013AD380));
+
+using r_luav_lessthan_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luav_lessthan_typedef r_luav_lessthan = (r_luav_lessthan_typedef)(x(0x013AD420));
+
+using r_luav_settable_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_luav_settable_typedef r_luav_settable = (r_luav_settable_typedef)(x(0x013AD4C0));
+
+using r_luav_tonumber_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luav_tonumber_typedef r_luav_tonumber = (r_luav_tonumber_typedef)(x(0x013AD650));
+
+using r_luav_tostring_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_luav_tostring_typedef r_luav_tostring = (r_luav_tostring_typedef)(x(0x013AD6B0));
+
+using r_luavm_compile_typedef = int(__cdecl*)(int a1);
+r_luavm_compile_typedef r_luavm_compile = (r_luavm_compile_typedef)(x(0x006D7D70));
+
+using r_luavm_load_typedef = int(__cdecl*)(int a1, int a2, int a3);
+r_luavm_load_typedef r_luavm_load = (r_luavm_load_typedef)(x(0x006D82B0));
+
+using r_luax_init_typedef = int(__cdecl*)(int a1);
+r_luax_init_typedef r_luax_init = (r_luax_init_typedef)(x(0x013AD7C0));
+
+using r_luaz_openspace_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_luaz_openspace_typedef r_luaz_openspace = (r_luaz_openspace_typedef)(x(0x013B1030));
+
+using r_mainposition_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_mainposition_typedef r_mainposition = (r_mainposition_typedef)(x(0x013ABED0));
+
+using r_markmt_typedef = int(__cdecl*)(int a1);
+r_markmt_typedef r_markmt = (r_markmt_typedef)(x(0x013A9F20));
+
+using r_markroot_typedef = int(__cdecl*)(int a1);
+r_markroot_typedef r_markroot = (r_markroot_typedef)(x(0x013AA000));
+
+using r_match_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_match_typedef r_match = (r_match_typedef)(x(0x013A63D0));
+
+using r_newkey_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_newkey_typedef r_newkey = (r_newkey_typedef)(x(0x013AC010));
+
+using r_newlstr_typedef = int(__fastcall*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_newlstr_typedef r_newlstr = (r_newlstr_typedef)(x(0x013AB3B0));
+
+using r_print_typedef = int(__cdecl*)(int a1, int a2, int a3);
+r_print_typedef r_print = (r_print_typedef)(x(0x0066AE90));
+
+using r_push_captures_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_push_captures_typedef r_push_captures = (r_push_captures_typedef)(x(0x013A6D60));
+
+using r_rbx_get_property_typedef = int(__thiscall*)(int a1, int a2);
+r_rbx_get_property_typedef r_rbx_get_property = (r_rbx_get_property_typedef)(x(0x0085F8B0));
+
+using r_rbx_network_replicator_onreceive_typedef = int(__fastcall*)(int a1, int a2, int a3);
+r_rbx_network_replicator_onreceive_typedef r_rbx_network_replicator_onreceive = (r_rbx_network_replicator_onreceive_typedef)(x(0x01178B70));
+
+using r_rbx_network_physicssenders2_sendpacket_typedef = int(__thiscall*)(int a1, int a2, int a3);
+r_rbx_network_physicssenders2_sendpacket_typedef r_rbx_network_physicssenders2_sendpacket = (r_rbx_network_physicssenders2_sendpacket_typedef)(x(0x01239DC0));
+
+using r_rbx_disable_report_screenshot_gl2_typedef = int(__stdcall*)();
+r_rbx_disable_report_screenshot_gl2_typedef r_rbx_disable_report_screenshot_gl2 = (r_rbx_disable_report_screenshot_gl2_typedef)(x(0x019ECAC0));
+
+using r_rbx_disable_report_screenshot_gl_typedef = int(__stdcall*)();
+r_rbx_disable_report_screenshot_gl_typedef r_rbx_disable_report_screenshot_gl = (r_rbx_disable_report_screenshot_gl_typedef)(x(0x019ECAA0));
+
+using r_rbx_disable_report_screenshot_metal_typedef = int(__stdcall*)();
+r_rbx_disable_report_screenshot_metal_typedef r_rbx_disable_report_screenshot_metal = (r_rbx_disable_report_screenshot_metal_typedef)(x(0x019ECAE0));
+
+using r_rbx_disable_report_screenshot_vulkan_typedef = int(__stdcall*)();
+r_rbx_disable_report_screenshot_vulkan_typedef r_rbx_disable_report_screenshot_vulkan = (r_rbx_disable_report_screenshot_vulkan_typedef)(x(0x019ECB00));
+
+using r_rbx_disable_report_screenshot_d3d_typedef = int(__stdcall*)();
+r_rbx_disable_report_screenshot_d3d_typedef r_rbx_disable_report_screenshot_d3d = (r_rbx_disable_report_screenshot_d3d_typedef)(x(0x019ECA80));
+
+using r_rbx_setsimulationradius_typedef = int(__stdcall*)(int a1, int a2);
+r_rbx_setsimulationradius_typedef r_rbx_setsimulationradius = (r_rbx_setsimulationradius_typedef)(x(0x0123A990));
+
+using r_rbx_corescript_getluavmcorescriptfilepath_typedef = int(__cdecl*)(int a1, int a2, const char* a3);
+r_rbx_corescript_getluavmcorescriptfilepath_typedef r_rbx_corescript_getluavmcorescriptfilepath = (r_rbx_corescript_getluavmcorescriptfilepath_typedef)(x(0x00AD2080));
+
+using r_rbx_datastore_runtransformfunction_typedef = int(__stdcall*)();
+r_rbx_datastore_runtransformfunction_typedef r_rbx_datastore_runtransformfunction = (r_rbx_datastore_runtransformfunction_typedef)(x(0x00DC8F80));
+
+using r_rbx_datamodel_dodatamodelsetup_typedef = int(__cdecl*)(int a1, int a2, int a3, int a4, int a5);
+r_rbx_datamodel_dodatamodelsetup_typedef r_rbx_datamodel_dodatamodelsetup = (r_rbx_datamodel_dodatamodelsetup_typedef)(x(0x006F9910));
+
+using r_rbx_debugvalueconverte_userdatatostring_typedef = int(__cdecl*)(int a1, int a2, int a3);
+r_rbx_debugvalueconverte_userdatatostring_typedef r_rbx_debugvalueconverte_userdatatostring = (r_rbx_debugvalueconverte_userdatatostring_typedef)(x(0x00C20540));
+
+using r_rbx_deu_uploadcrasheventfile_typedef = int(__cdecl*)(int a1);
+r_rbx_deu_uploadcrasheventfile_typedef r_rbx_deu_uploadcrasheventfile = (r_rbx_deu_uploadcrasheventfile_typedef)(x(0x0062B830));
+
+using r_rbx_lm_reporterror_typedef = int(__cdecl*)(int a1, int a2);
+r_rbx_lm_reporterror_typedef r_rbx_lm_reporterror = (r_rbx_lm_reporterror_typedef)(x(0x00630220));
+
+using r_rbx_lua_dumpthreadrefcounts_typedef = int(__cdecl*)();
+r_rbx_lua_dumpthreadrefcounts_typedef r_rbx_lua_dumpthreadrefcounts = (r_rbx_lua_dumpthreadrefcounts_typedef)(x(0x008353B0));
+
+using r_rbx_network_replicator_processdeserializedpacket_typedef = int(__thiscall*)(int a1, int a2);
+r_rbx_network_replicator_processdeserializedpacket_typedef r_rbx_network_replicator_processdeserializedpacket = (r_rbx_network_replicator_processdeserializedpacket_typedef)(x(0x0117CBF0));
+
+using r_rbx_network_server_registerlegalscript_typedef = int(__thiscall*)(int a1, int a2);
+r_rbx_network_server_registerlegalscript_typedef r_rbx_network_server_registerlegalscript = (r_rbx_network_server_registerlegalscript_typedef)(x(0x011A77E0));
+
+using r_rbx_rcr_processexception_typedef = int(__stdcall*)();
+r_rbx_rcr_processexception_typedef r_rbx_rcr_processexception = (r_rbx_rcr_processexception_typedef)(x(0x006300D0));
+
+using r_rbx_sc_closestate_typedef = int(__stdcall*)(int a1);
+r_rbx_sc_closestate_typedef r_rbx_sc_closestate = (r_rbx_sc_closestate_typedef)(x(0x007958E0));
+
+using r_rbx_taskscheduler_getlastcycletimestamp_typedef = int(__cdecl*)(int a1);
+r_rbx_taskscheduler_getlastcycletimestamp_typedef r_rbx_taskscheduler_getlastcycletimestamp = (r_rbx_taskscheduler_getlastcycletimestamp_typedef)(x(0x010024A0));
+
+using r_rbx_lua_bridge_on_index_typedef = int(__cdecl*)(int a1);
+r_rbx_lua_bridge_on_index_typedef r_rbx_lua_bridge_on_index = (r_rbx_lua_bridge_on_index_typedef)(x(0x00861420));
+
+using r_rbx_security_context_current_typedef = int(__thiscall*)(int a1);
+r_rbx_security_context_current_typedef r_rbx_security_context_current = (r_rbx_security_context_current_typedef)(x(0x01392010));
+
+using r_rbx_datamodel_getjobsinfo_typedef = int(__thiscall*)(int a1, int a2);
+r_rbx_datamodel_getjobsinfo_typedef r_rbx_datamodel_getjobsinfo = (r_rbx_datamodel_getjobsinfo_typedef)(x(0x006FD180));
+
+using r_rbx_sc_crash_typedef = int(__cdecl*)(int a1);
+r_rbx_sc_crash_typedef r_rbx_sc_crash = (r_rbx_sc_crash_typedef)(x(0x007963C0));
+
+using r_rbx_sc_interrupt_typedef = int(__cdecl*)(int a1);
+r_rbx_sc_interrupt_typedef r_rbx_sc_interrupt = (r_rbx_sc_interrupt_typedef)(x(0x0079B830));
+
+using r_rbx_sc_loadstring_typedef = int(__cdecl*)(int a1);
+r_rbx_sc_loadstring_typedef r_rbx_sc_loadstring = (r_rbx_sc_loadstring_typedef)(x(0x0079C120));
+
+using r_rbx_sc_scriptcontext_typedef = int(__thiscall*)(int a1);
+r_rbx_sc_scriptcontext_typedef r_rbx_sc_scriptcontext = (r_rbx_sc_scriptcontext_typedef)(x(0x0078EC30));
+
+using r_rbx_sc_startscript_typedef = int(__cdecl*)();
+r_rbx_sc_startscript_typedef r_rbx_sc_startscript = (r_rbx_sc_startscript_typedef)(x(0x007A7B50));
+
+using r_rbx_sc_watchdog_typedef = int(__thiscall*)(int a1);
+r_rbx_sc_watchdog_typedef r_rbx_sc_watchdog = (r_rbx_sc_watchdog_typedef)(x(0x007A97A0));
+
+using r_rbx_scriptcontext_getcontext_typedef = int(__cdecl*)(int a1);
+r_rbx_scriptcontext_getcontext_typedef r_rbx_scriptcontext_getcontext = (r_rbx_scriptcontext_getcontext_typedef)(x(0x00799E60));
+
+using r_rbx_scriptcontext_debuggermanager_typedef = int(__cdecl*)(int a1);
+r_rbx_scriptcontext_debuggermanager_typedef r_rbx_scriptcontext_debuggermanager = (r_rbx_scriptcontext_debuggermanager_typedef)(x(0x00796B80));
+
+using r_rbx_scriptcontext_pluginmanager_typedef = int(__cdecl*)(int a1);
+r_rbx_scriptcontext_pluginmanager_typedef r_rbx_scriptcontext_pluginmanager = (r_rbx_scriptcontext_pluginmanager_typedef)(x(0x0079F150));
+
+using r_rbx_scriptcontext_usersettings_typedef = int(__cdecl*)(int a1);
+r_rbx_scriptcontext_usersettings_typedef r_rbx_scriptcontext_usersettings = (r_rbx_scriptcontext_usersettings_typedef)(x(0x007A9320));
+
+using r_rbx_scriptcontext_settings_typedef = int(__cdecl*)(int a1);
+r_rbx_scriptcontext_settings_typedef r_rbx_scriptcontext_settings = (r_rbx_scriptcontext_settings_typedef)(x(0x007A6E90));
+
+using r_rbx_scriptcontext_getglobalstate_typedef = int(__cdecl*)(int a1);
+r_rbx_scriptcontext_getglobalstate_typedef r_rbx_scriptcontext_getglobalstate = (r_rbx_scriptcontext_getglobalstate_typedef)(x(0x0079A0D0));
+
+using r_rbx_modulescript_vmstate_typedef = int(__stdcall*)(int a1);
+r_rbx_modulescript_vmstate_typedef r_rbx_modulescript_vmstate = (r_rbx_modulescript_vmstate_typedef)(x(0x00C31360));
+
+using r_rbx_modulescript_pervmstate_setcompletedsuccess_typedef = int(__thiscall*)(int a1, int a2, int a3);
+r_rbx_modulescript_pervmstate_setcompletedsuccess_typedef r_rbx_modulescript_pervmstate_setcompletedsuccess = (r_rbx_modulescript_pervmstate_setcompletedsuccess_typedef)(x(0x00C31030));
+
+using r_rbx_modulescript_pervmstate_getandclearyieldedimporters_typedef = int(__thiscall*)(int a1, int a2);
+r_rbx_modulescript_pervmstate_getandclearyieldedimporters_typedef r_rbx_modulescript_pervmstate_getandclearyieldedimporters = (r_rbx_modulescript_pervmstate_getandclearyieldedimporters_typedef)(x(0x00C30D90));
+
+using r_rbx_scriptcontext_requiremodulescriptsuccesscontinuation_typedef = int(__cdecl*)(int a1, int a2, int a3);
+r_rbx_scriptcontext_requiremodulescriptsuccesscontinuation_typedef r_rbx_scriptcontext_requiremodulescriptsuccesscontinuation = (r_rbx_scriptcontext_requiremodulescriptsuccesscontinuation_typedef)(x(0x007A4A70));
+
+using r_rbx_setthreadname_typedef = int(__cdecl*)(int a1);
+r_rbx_setthreadname_typedef r_rbx_setthreadname = (r_rbx_setthreadname_typedef)(x(0x01001E90));
+
+using r_rbx_serializer_loadinstances_typedef = int(__cdecl*)(int a1, int a2);
+r_rbx_serializer_loadinstances_typedef r_rbx_serializer_loadinstances = (r_rbx_serializer_loadinstances_typedef)(x(0x00872440));
+
+using r_rbx_scriptcontext_printcallstack_typedef = int(__cdecl*)(int a1, int a2, const char* a3, int a4);
+r_rbx_scriptcontext_printcallstack_typedef r_rbx_scriptcontext_printcallstack = (r_rbx_scriptcontext_printcallstack_typedef)(x(0x0079F470));
+
+using r_rbx_serializer_loadinstances_long_typedef = int(__cdecl*)(int a1, int a2, int a3);
+r_rbx_serializer_loadinstances_long_typedef r_rbx_serializer_loadinstances_long = (r_rbx_serializer_loadinstances_long_typedef)(x(0x00872460));
+
+using r_rbx_standardout_printwithlink_typedef = int(__cdecl*)(int a1, int a2, int a3, int a4);
+r_rbx_standardout_printwithlink_typedef r_rbx_standardout_printwithlink = (r_rbx_standardout_printwithlink_typedef)(x(0x0066AB70));
+
+using r_rbx_ts_startscript_typedef = int(__thiscall*)(int a1, int a2);
+r_rbx_ts_startscript_typedef r_rbx_ts_startscript = (r_rbx_ts_startscript_typedef)(x(0x00B1C090));
+
+using r_rbx_ws_getrealphysicsfps_typedef = int(__thiscall*)(int a1);
+r_rbx_ws_getrealphysicsfps_typedef r_rbx_ws_getrealphysicsfps = (r_rbx_ws_getrealphysicsfps_typedef)(x(0x00925640));
+
+using r_rbxcrash_typedef = int(__cdecl*)(int a1, int a2);
+r_rbxcrash_typedef r_rbxcrash = (r_rbxcrash_typedef)(x(0x015A35B0));
+
+using r_reallymarkobject_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_reallymarkobject_typedef r_reallymarkobject = (r_reallymarkobject_typedef)(x(0x013AA370));
+
+using r_rehash_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_rehash_typedef r_rehash = (r_rehash_typedef)(x(0x013AC1C0));
+
+using r_reportError_typedef = int(__stdcall*)(int a1, int a2);
+r_reportError_typedef r_reportError = (r_reportError_typedef)(x(0x0079B160));
+
+using r_resize_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3, int a4);
+r_resize_typedef r_resize = (r_resize_typedef)(x(0x013AC430));
+
+using r_resume_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_resume_typedef r_resume = (r_resume_typedef)(x(0x01397330));
+
+using r_resume_error_typedef = int(__cdecl*)(int a1, const char* a2);
+r_resume_error_typedef r_resume_error = (r_resume_error_typedef)unprotect(x(0x01397410));
+
+using r_retcheck_typedef = int(__fastcall*)(int a1, int a2);
+r_retcheck_typedef r_retcheck = (r_retcheck_typedef)(x(0x006D86B0));
+
+using r_robloxextraspace__robloxextraspace_typedef = int(__thiscall*)(int a1, int a2);
+r_robloxextraspace__robloxextraspace_typedef r_robloxextraspace__robloxextraspace = (r_robloxextraspace__robloxextraspace_typedef)(x(0x00792CF0));
+
+using r_sandboxthread_typedef = int(__cdecl*)(int a1, int a2, int a3);
+r_sandboxthread_typedef r_sandboxthread = (r_sandboxthread_typedef)(x(0x007A6CD0));
+
+using r_setarrayvector_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_setarrayvector_typedef r_setarrayvector = (r_setarrayvector_typedef)(x(0x013AC610));
+
+using r_setnodevector_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_setnodevector_typedef r_setnodevector = (r_setnodevector_typedef)(x(0x013AC690));
+
+using r_singlestep_typedef = int(__cdecl*)(int a1);
+r_singlestep_typedef r_singlestep = (r_singlestep_typedef)(x(0x013AA510));
+
+using r_spawn_typedef = int(__cdecl*)(int a1);
+r_spawn_typedef r_spawn = (r_spawn_typedef)(x(0x007A7060));
+
+using r_stack_init_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_stack_init_typedef r_stack_init = (r_stack_init_typedef)(x(0x013A0FA0));
+
+using r_str_find_aux_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_str_find_aux_typedef r_str_find_aux = (r_str_find_aux_typedef)(x(0x013A6F10));
+
+using r_tag_error_typedef = int(__cdecl*)(std::uintptr_t a1, int a2, int a3);
+r_tag_error_typedef r_tag_error = (r_tag_error_typedef)(x(0x01396950));
+
+using r_trustCheck_typedef = int(__cdecl*)(const char* a1, char* a2,  int a3);
+r_trustCheck_typedef r_trustCheck = (r_trustCheck_typedef)(x(0x0151CD20));
+
+using r_taskscheduler_typedef = int(__cdecl*)();
+r_taskscheduler_typedef r_taskscheduler = (r_taskscheduler_typedef)(x(0x010026C0));
+
+using r_unbound_search_typedef = int(__cdecl*)(std::uintptr_t a1, int a2);
+r_unbound_search_typedef r_unbound_search = (r_unbound_search_typedef)(x(0x013AC760));
+
+using r_vm_invoker_typedef = int(__thiscall*)(int a1);
+r_vm_invoker_typedef r_vm_invoker = (r_vm_invoker_typedef)(x(0x0139FA60));
+
+

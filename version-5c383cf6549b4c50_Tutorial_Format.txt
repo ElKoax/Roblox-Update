@@ -1,0 +1,548 @@
+* addinfo - Go to currentline addy in ida and go to the 1 xref and get it's parent function
+
+* adjuststack - Go to lua_objlen addy in ida and go to the 10 xref and get it's parent function
+
+* arith - Go to call_bintm addy in ida and go to the 1 xref and get it's parent function
+
+* aux_upvalue - Go to lua_getupvalue addy in ida and find it's 2 function call 
+
+* auxgetinfo - Go to luao_chunkid addy in ida and go to the 9 xref and get it's parent function
+
+* auxresume - Go to lua_checkstack addy in ida and go to the 6 xref and get it's parent function
+
+* call_bintm - Go to luat_gettm addy in ida and go to the 21 xref and get it's parent function
+
+* call_ordertm - Go to luav_lessequal addy in ida and find it's 1 function call 
+
+* calltmres - Go to luad_growstack addy in ida and go to the 19 xref and get it's parent function
+
+* close_state - Go to luaf_close addy in ida and go to the 5 xref and get it's parent function
+
+* currentline - Go to addinfo addy in ida and find it's 1 function call 
+
+* 
+* f_call - Go to luad_call addy in ida and go to the 1 xref and get it's parent function
+
+* f_luaopen - Go to stack_init addy in ida and go to the 1 xref and get it's parent function
+
+* 
+* 
+* findlocal - Go to lua_getlocal addy in ida and find it's 1 function call 
+
+* 
+* 
+* 
+* 
+* 
+* getfunc - Go to lual_optinteger addy in ida and go to the 6 xref and get it's parent function
+
+* getjobsbyname - Go to rbx_network_replicator_processdeserializedpacket addy in ida and find it's 49 function call 
+
+* getnamecallmethod - Go to lual_argerror addy in ida and find it's 1 function call 
+
+* grabscriptcontext - Go to rbx_deu_uploadcrasheventfile addy in ida and find it's 8 function call 
+
+* grabglobalstateindex - Go to rbx_sc_startscript addy in ida and find it's 27 function call 
+
+* growci - Go to luad_reallocci addy in ida and go to the 1 xref and get it's parent function
+
+* hashnum - Go to mainposition addy in ida and find it's 1 function call 
+
+* index2adr - Go to lua_rawvalue addy in ida and find it's 1 function call 
+
+* luaopen_base - Go to lua_setfield addy in ida and go to the 17 xref and get it's parent function
+
+* luaopen_table - Go to lua_setfield addy in ida and go to the 18 xref and get it's parent function
+
+* 
+* lua_call - Go to luad_call addy in ida and go to the 2 xref and get it's parent function
+
+* lua_checkstack - Go to luad_growstack addy in ida and go to the 2 xref and get it's parent function
+
+* lua_close - Go to luaf_close addy in ida and go to the 7 xref and get it's parent function
+
+* lua_concat - Go to luac_step addy in ida and go to the 1 xref and get it's parent function
+
+* lua_createtable - Go to luac_step addy in ida and go to the 2 xref and get it's parent function
+
+* lua_error - Go to lual_error addy in ida and find it's 4 function call 
+
+* lua_freeobj - Go to luaf_freeproto addy in ida and go to the 2 xref and get it's parent function
+
+* lua_gc - Go to luac_fullgc addy in ida and go to the 1 xref and get it's parent function
+
+* lua_getargument - Go to luaa_pushobject addy in ida and go to the 1 xref and get it's parent function
+
+* lua_getfenv - Go to index2adr addy in ida and go to the 2 xref and get it's parent function
+
+* lua_getfield - Go to index2adr addy in ida and go to the 3 xref and get it's parent function
+
+* lua_getinfo - Go to auxgetinfo addy in ida and go to the 1 xref and get it's parent function
+
+* lua_getlocal - Go to findlocal addy in ida and go to the 1 xref and get it's parent function
+
+* lua_getmetatable - Go to index2adr addy in ida and go to the 4 xref and get it's parent function
+
+* lua_getstack - Go to lual_where addy in ida and find it's 1 function call 
+
+* lua_gettable - Go to index2adr addy in ida and go to the 5 xref and get it's parent function
+
+* lua_gettop - Go to rbx_sc_crash addy in ida and find it's 1 function call 
+
+* lua_getupvalue - Go to index2adr addy in ida and go to the 6 xref and get it's parent function
+
+* lua_insert - Go to index2adr addy in ida and go to the 7 xref and get it's parent function
+
+* lua_iscfunction - Go to index2adr addy in ida and go to the 9 xref and get it's parent function
+
+* lua_isnumber - Go to index2adr addy in ida and go to the 10 xref and get it's parent function
+
+* lua_isstring - Go to index2adr addy in ida and go to the 11 xref and get it's parent function
+
+* lua_isuserdata - Go to index2adr addy in ida and go to the 8 xref and get it's parent function
+
+* lua_lessthan - Go to index2adr addy in ida and go to the 13 xref and get it's parent function
+
+* lua_newstate - Go to luad_rawrunprotected addy in ida and go to the 5 xref and get it's parent function
+
+* lua_newthread - Go to luac_step addy in ida and go to the 4 xref and get it's parent function
+
+* lua_newuserdata - Go to luac_step addy in ida and go to the 5 xref and get it's parent function
+
+* lua_next - Go to index2adr addy in ida and go to the 14 xref and get it's parent function
+
+* lua_objlen - Go to index2adr addy in ida and go to the 15 xref and get it's parent function
+
+* lua_pcall - Go to index2adr addy in ida and go to the 16 xref and get it's parent function
+
+* 
+* lua_pushcclosure - Go to luac_step addy in ida and go to the 6 xref and get it's parent function
+
+* lua_pushfstring - Go to luac_step addy in ida and go to the 7 xref and get it's parent function
+
+* lua_pushinteger - Go to lual_unref addy in ida and find it's 4 function call 
+
+* 
+* lua_pushlstring - Go to luac_step addy in ida and go to the 8 xref and get it's parent function
+
+* lua_pushnil - Go to rbx_sc_loadstring addy in ida and find it's 23 function call 
+
+* 
+* lua_pushstring - Go to luac_step addy in ida and go to the 9 xref and get it's parent function
+
+* 
+* lua_pushvalue - Go to index2adr addy in ida and go to the 17 xref and get it's parent function
+
+* lua_pushvfstring - Go to luac_step addy in ida and go to the 10 xref and get it's parent function
+
+* lua_rawequal - Go to index2adr addy in ida and go to the 19 xref and get it's parent function
+
+* lua_rawget - Go to index2adr addy in ida and go to the 20 xref and get it's parent function
+
+* lua_rawgeti - Go to index2adr addy in ida and go to the 22 xref and get it's parent function
+
+* lua_rawset - Go to index2adr addy in ida and go to the 23 xref and get it's parent function
+
+* lua_rawseti - Go to index2adr addy in ida and go to the 24 xref and get it's parent function
+
+* lua_rawvalue - Go to index2adr addy in ida and go to the 1 xref and get it's parent function
+
+* lua_remove - Go to index2adr addy in ida and go to the 25 xref and get it's parent function
+
+* lua_replace - Go to index2adr addy in ida and go to the 26 xref and get it's parent function
+
+* lua_resume - Go to resume_error addy in ida and go to the 2 xref and get it's parent function
+
+* lua_setfenv - Go to index2adr addy in ida and go to the 27 xref and get it's parent function
+
+* lua_setfield - Go to index2adr addy in ida and go to the 28 xref and get it's parent function
+
+* lua_setlocal - Go to findlocal addy in ida and go to the 2 xref and get it's parent function
+
+* lua_setmetatable - Go to index2adr addy in ida and go to the 29 xref and get it's parent function
+
+* 
+* lua_setsafeenv - Go to rbx_sc_loadstring addy in ida and find it's 13 function call 
+
+* lua_settable - Go to luav_settable addy in ida and go to the 2 xref and get it's parent function
+
+* lua_settop - Go to spawn addy in ida and find it's 12 function call 
+
+* lua_setupvalue - Go to aux_upvalue addy in ida and go to the 2 xref and get it's parent function
+
+* lua_toboolean - Go to str_find_aux addy in ida and find it's 4 function call 
+
+* lua_tointeger - Go to luav_tonumber addy in ida and go to the 2 xref and get it's parent function
+
+* lua_tolstring - Go to luav_tostring addy in ida and go to the 2 xref and get it's parent function
+
+* lua_tonumber - Go to luav_tonumber addy in ida and go to the 3 xref and get it's parent function
+
+* lua_topointer - Go to rbx_debugvalueconverte_userdatatostring addy in ida and find it's 4 function call 
+
+* lua_tostring - Go to rbx_lua_bridge_on_index addy in ida and find it's 5 function call 
+
+* lua_tothread - Go to luab_auxwrap addy in ida and find it's 1 function call 
+
+* lua_tounsignedx - Go to luav_tonumber addy in ida and go to the 4 xref and get it's parent function
+
+* 
+* lua_type - Go to rbx_debugvalueconverte_userdatatostring addy in ida and find it's 13 function call 
+
+* lua_typename - Go to tag_error addy in ida and find it's 1 function call 
+
+* lua_xmove - Go to spawn addy in ida and find it's 7 function call 
+
+* 
+* luaa_pushobject - Go to lua_getargument addy in ida and find it's 1 function call 
+
+* luab_auxwrap - Go to lua_tothread addy in ida and go to the 4 xref and get it's parent function
+
+* luac_barrierback - Go to lua_rawset addy in ida and find it's 3 function call 
+
+* luac_barrierf - Go to reallymarkobject addy in ida and go to the 3 xref and get it's parent function
+
+* luac_fullgc - Go to singlestep addy in ida and go to the 2 xref and get it's parent function
+
+* luac_link - Go to luae_newthread addy in ida and find it's 2 function call 
+
+* luac_linkupval - Go to reallymarkobject addy in ida and go to the 4 xref and get it's parent function
+
+* luac_step - Go to singlestep addy in ida and go to the 4 xref and get it's parent function
+
+* luad_call - Go to luad_precall addy in ida and go to the 1 xref and get it's parent function
+
+* luad_growstack - Go to luad_reallocstack addy in ida and go to the 1 xref and get it's parent function
+
+* luad_pcall - Go to luad_rawrunprotected addy in ida and go to the 1 xref and get it's parent function
+
+* luad_poscall - Go to resume addy in ida and find it's 3 function call 
+
+* luad_precall - Go to luau_tryfunctm addy in ida and go to the 3 xref and get it's parent function
+
+* luad_rawrunprotected - Go to luad_growstack addy in ida and go to the 3 xref and get it's parent function
+
+* luad_reallocci - Go to luam_realloc addy in ida and go to the 2 xref and get it's parent function
+
+* luad_reallocstack - Go to luam_realloc addy in ida and go to the 3 xref and get it's parent function
+
+* luad_seterrorObj - Go to luas_newlstr addy in ida and go to the 7 xref and get it's parent function
+
+* luad_throw - Go to lua_error addy in ida and find it's 1 function call 
+
+* luae_freethread - Go to luaf_close addy in ida and go to the 6 xref and get it's parent function
+
+* luae_newthread - Go to luam_realloc_ addy in ida and go to the 7 xref and get it's parent function
+
+* luaf_close - Go to luac_linkupval addy in ida and go to the 1 xref and get it's parent function
+
+* luaf_findupval - Go to luam_realloc_ addy in ida and go to the 11 xref and get it's parent function
+
+* luaf_freeproto - Go to lua_freeobj addy in ida and find it's 1 function call 
+
+* luaf_newcclosure - Go to luam_realloc_ addy in ida and go to the 12 xref and get it's parent function
+
+* luaf_newlclosure - Go to luam_realloc_ addy in ida and go to the 13 xref and get it's parent function
+
+* luaf_newproto - Go to luam_realloc_ addy in ida and go to the 14 xref and get it's parent function
+
+* luag_aritherror - Go to luav_doarith addy in ida and find it's 8 function call 
+
+* luag_breakpoint - Go to luam_realloc_ addy in ida and go to the 10 xref and get it's parent function
+
+* luag_concaterror - Go to luav_concat addy in ida and find it's 15 function call 
+
+* luag_forerrorl - Go to luau_prepareforn addy in ida and find it's 6 function call 
+
+* luag_getline - Go to luau_backtrace addy in ida and find it's 8 function call 
+
+* luag_indexerror - Go to luav_gettable addy in ida and find it's 5 function call 
+
+* luag_ordererror - Go to luav_lessequal addy in ida and find it's 4 function call 
+
+* luag_runerror - Go to lua_rawset addy in ida and find it's 5 function call 
+
+* luag_typeerror - Go to luah_getstr addy in ida and go to the 5 xref and get it's parent function
+
+* luah_clone - Go to luam_realloc_ addy in ida and go to the 21 xref and get it's parent function
+
+* luah_free - Go to lua_freeobj addy in ida and find it's 6 function call 
+
+* luah_get - Go to luah_getstr addy in ida and go to the 1 xref and get it's parent function
+
+* luah_getn - Go to unbound_search addy in ida and go to the 1 xref and get it's parent function
+
+* luah_getnum - Go to lua_rawgeti addy in ida and find it's 2 function call 
+
+* luah_getstr - Go to luah_get addy in ida and find it's 1 function call 
+
+* luah_new - Go to luam_realloc_ addy in ida and go to the 22 xref and get it's parent function
+
+* luah_next - Go to mainposition addy in ida and go to the 2 xref and get it's parent function
+
+* luah_resizearray - Go to resize addy in ida and go to the 2 xref and get it's parent function
+
+* luah_set - Go to luah_getstr addy in ida and go to the 2 xref and get it's parent function
+
+* luah_setnum - Go to luah_getnum addy in ida and go to the 8 xref and get it's parent function
+
+* luah_setstr - Go to luah_getstr addy in ida and go to the 3 xref and get it's parent function
+
+* lual_addlstring - Go to adjuststack addy in ida and go to the 1 xref and get it's parent function
+
+* lual_addvalue - Go to lua_tolstring addy in ida and go to the 26 xref and get it's parent function
+
+* lual_argerror - Go to getfunc addy in ida and find it's 10 function call 
+
+* 
+* 
+* lual_checkinteger - Go to lua_tointeger addy in ida and go to the 16 xref and get it's parent function
+
+* lual_checklstring - Go to lua_tolstring addy in ida and go to the 27 xref and get it's parent function
+
+* 
+* lual_checkstack - Go to push_captures addy in ida and find it's 1 function call 
+
+* 
+* lual_checkunsigned - Go to lua_tounsignedx addy in ida and go to the 1 xref and get it's parent function
+
+* lual_error - Go to rbx_sc_crash addy in ida and find it's 4 function call 
+
+* lual_findtable - Go to lua_rawget addy in ida and go to the 16 xref and get it's parent function
+
+* lual_getmetafield - Go to lua_getmetatable addy in ida and go to the 3 xref and get it's parent function
+
+* lual_newmetatable - Go to lua_getfield addy in ida and go to the 9 xref and get it's parent function
+
+* lual_optinteger - Go to getfunc addy in ida and find it's 3 function call 
+
+* lual_optlstring - Go to rbx_sc_loadstring addy in ida and find it's 12 function call 
+
+* lual_prepbuffer - Go to adjuststack addy in ida and go to the 3 xref and get it's parent function
+
+* lual_pushresult - Go to lua_concat addy in ida and go to the 4 xref and get it's parent function
+
+* lual_ref - Go to lua_rawgeti addy in ida and go to the 24 xref and get it's parent function
+
+* lual_register - Go to lual_findtable addy in ida and go to the 2 xref and get it's parent function
+
+* lual_typeerror - Go to rbx_lua_bridge_on_index addy in ida and find it's 12 function call 
+
+* lual_unref - Go to lua_rawgeti addy in ida and go to the 25 xref and get it's parent function
+
+* lual_where - Go to lua_getstack addy in ida and go to the 14 xref and get it's parent function
+
+* luam_realloc - Go to luad_pcall addy in ida and find it's 4 function call 
+
+* luam_realloc_ - Go to luau_deserialize addy in ida and find it's 16 function call 
+
+* luam_toobig - Go to luad_reallocci addy in ida and find it's 2 function call 
+
+* luao_chunkid - Go to luavm_load addy in ida and find it's 17 function call 
+
+* luao_pushfstring - Go to luas_newlstr addy in ida and go to the 9 xref and get it's parent function
+
+* luao_pushvfstring - Go to luas_newlstr addy in ida and go to the 10 xref and get it's parent function
+
+* luao_rawequalKey - Go to luah_get addy in ida and find it's 5 function call 
+
+* luao_rawequalobj - Go to lua_rawequal addy in ida and find it's 3 function call 
+
+* luao_str2d - Go to luav_doarith addy in ida and find it's 2 function call 
+
+* luas_newlstr - Go to newlstr addy in ida and go to the 1 xref and get it's parent function
+
+* luas_newudata - Go to luam_realloc_ addy in ida and go to the 15 xref and get it's parent function
+
+* luas_resize - Go to luam_realloc_ addy in ida and go to the 16 xref and get it's parent function
+
+* luat_gettm - Go to luah_getstr addy in ida and go to the 4 xref and get it's parent function
+
+* luat_objtypename - Go to luah_getstr addy in ida and go to the 6 xref and get it's parent function
+
+* luau_backtrace - Go to luag_getline addy in ida and go to the 2 xref and get it's parent function
+
+* luau_betavm - Go to luau_callhook addy in ida and go to the 6 xref and get it's parent function
+
+* luau_callhook - Go to luad_growstack addy in ida and go to the 13 xref and get it's parent function
+
+* luau_calltm - Go to luad_growstack addy in ida and go to the 12 xref and get it's parent function
+
+* luau_deserialize - Go to luas_newlstr addy in ida and go to the 12 xref and get it's parent function
+
+* 
+* luau_loopforg - Go to luad_call addy in ida and go to the 4 xref and get it's parent function
+
+* luau_prepareforn - Go to luav_tonumber addy in ida and go to the 7 xref and get it's parent function
+
+* luau_resolveimport - Go to luad_growstack addy in ida and go to the 16 xref and get it's parent function
+
+* luau_tryfunctm - Go to luag_typeerror addy in ida and go to the 15 xref and get it's parent function
+
+* luav_concat - Go to luas_newlstr addy in ida and go to the 19 xref and get it's parent function
+
+* luav_doarith - Go to luao_str2d addy in ida and go to the 2 xref and get it's parent function
+
+* luav_dolen - Go to luah_getn addy in ida and go to the 4 xref and get it's parent function
+
+* luav_execute - Go to luau_callhook addy in ida and go to the 5 xref and get it's parent function
+
+* luav_gettable - Go to luah_get addy in ida and go to the 2 xref and get it's parent function
+
+* luav_gettable_opt - Go to luav_gettable addy in ida and go to the 1 xref and get it's parent function
+
+* luav_lessequal - Go to call_ordertm addy in ida and go to the 1 xref and get it's parent function
+
+* luav_lessthan - Go to call_ordertm addy in ida and go to the 2 xref and get it's parent function
+
+* luav_settable - Go to luah_set addy in ida and go to the 5 xref and get it's parent function
+
+* luav_tonumber - Go to luao_str2d addy in ida and go to the 3 xref and get it's parent function
+
+* luav_tostring - Go to luas_newlstr addy in ida and go to the 20 xref and get it's parent function
+
+* luavm_compile - Go to rbx_network_server_registerlegalscript addy in ida and find it's 15 function call 
+
+* luavm_load - Go to luao_chunkid addy in ida and go to the 4 xref and get it's parent function
+
+* luax_init - Go to luas_newlstr addy in ida and go to the 22 xref and get it's parent function
+
+* luaz_openspace - Go to luam_realloc addy in ida and go to the 9 xref and get it's parent function
+
+* mainposition - Go to hashnum addy in ida and go to the 1 xref and get it's parent function
+
+* markmt - Go to reallymarkobject addy in ida and go to the 6 xref and get it's parent function
+
+* markroot - Go to reallymarkobject addy in ida and go to the 9 xref and get it's parent function
+
+* match - Go to match addy in ida and go to the 7 xref and get it's parent function
+
+* newkey - Go to mainposition addy in ida and go to the 5 xref and get it's parent function
+
+* newlstr - Go to luam_realloc_ addy in ida and go to the 18 xref and get it's parent function
+
+* print - Go to rbx_lm_reporterror addy in ida and find it's 2 function call 
+
+* push_captures - Go to lual_checkstack addy in ida and go to the 4 xref and get it's parent function
+
+* rbx_get_property - Go to rbx_lua_bridge_on_index addy in ida and find it's 6 function call 
+
+* 
+* rbx_network_physicssenders2_sendpacket - Go to rbx_setsimulationradius addy in ida and go to the 2 xref and get it's parent function
+
+* rbx_disable_report_screenshot_gl2 Addy Is Not A Function 
+
+* rbx_disable_report_screenshot_gl Addy Is Not A Function 
+
+* rbx_disable_report_screenshot_metal Addy Is Not A Function 
+
+* rbx_disable_report_screenshot_vulkan Addy Is Not A Function 
+
+* rbx_disable_report_screenshot_d3d Addy Is Not A Function 
+
+* rbx_setsimulationradius - Go to rbx_network_physicssenders2_sendpacket addy in ida and find it's 19 function call 
+
+* 
+* 
+* 
+* rbx_debugvalueconverte_userdatatostring - Go to rbx_scriptcontext_getcontext addy in ida and go to the 11 xref and get it's parent function
+
+* rbx_deu_uploadcrasheventfile - Go to rbx_rcr_processexception addy in ida and find it's 6 function call 
+
+* rbx_lm_reporterror - Go to print addy in ida and go to the 17 xref and get it's parent function
+
+* rbx_lua_dumpthreadrefcounts - Go to rbx_sc_closestate addy in ida and find it's 7 function call 
+
+* 
+* rbx_network_server_registerlegalscript - Go to luavm_compile addy in ida and go to the 3 xref and get it's parent function
+
+* rbx_rcr_processexception - Go to rbx_lm_reporterror addy in ida and go to the 22 xref and get it's parent function
+
+* rbx_sc_closestate - Go to rbx_lua_dumpthreadrefcounts addy in ida and go to the 4 xref and get it's parent function
+
+* rbx_taskscheduler_getlastcycletimestamp - Go to taskscheduler addy in ida and go to the 11 xref and get it's parent function
+
+* rbx_lua_bridge_on_index - Go to lua_tostring addy in ida and go to the 4 xref and get it's parent function
+
+* rbx_security_context_current Addy Is Not A Function 
+
+* 
+* rbx_sc_crash - Go to lua_tolstring addy in ida and go to the 3 xref and get it's parent function
+
+* rbx_sc_interrupt - Go to rbx_taskscheduler_getlastcycletimestamp addy in ida and go to the 1 xref and get it's parent function
+
+* rbx_sc_loadstring - Go to lual_checklstring addy in ida and go to the 4 xref and get it's parent function
+
+* 
+* 
+* rbx_sc_watchdog - Go to rbx_setthreadname addy in ida and go to the 4 xref and get it's parent function
+
+* rbx_scriptcontext_getcontext - Go to rbx_debugvalueconverte_userdatatostring addy in ida and find it's 1 function call 
+
+* rbx_scriptcontext_debuggermanager - Go to rbx_security_context_current addy in ida and go to the 29 xref and get it's parent function
+
+* 
+* 
+* 
+* rbx_scriptcontext_getglobalstate - Go to rbx_scriptcontext_requiremodulescriptsuccesscontinuation addy in ida and find it's 5 function call 
+
+* rbx_modulescript_vmstate - Go to rbx_scriptcontext_requiremodulescriptsuccesscontinuation addy in ida and find it's 6 function call 
+
+* rbx_modulescript_pervmstate_setcompletedsuccess - Go to rbx_scriptcontext_requiremodulescriptsuccesscontinuation addy in ida and find it's 7 function call 
+
+* rbx_modulescript_pervmstate_getandclearyieldedimporters - Go to rbx_scriptcontext_requiremodulescriptsuccesscontinuation addy in ida and find it's 8 function call 
+
+* rbx_scriptcontext_requiremodulescriptsuccesscontinuation - Go to lual_ref addy in ida and go to the 1 xref and get it's parent function
+
+* rbx_setthreadname - Go to rbx_sc_watchdog addy in ida and find it's 1 function call 
+
+* rbx_serializer_loadinstances - Go to rbx_serializer_loadinstances_long addy in ida and go to the 1 xref and get it's parent function
+
+* rbx_scriptcontext_printcallstack - Go to rbx_standardout_printwithlink addy in ida and go to the 4 xref and get it's parent function
+
+* rbx_serializer_loadinstances_long - Go to rbx_serializer_loadinstances addy in ida and find it's 1 function call 
+
+* 
+* 
+* rbxcrash - Go to rbx_sc_crash addy in ida and find it's 3 function call 
+
+* reallymarkobject - Go to reallymarkobject addy in ida and go to the 18 xref and get it's parent function
+
+* rehash - Go to newkey addy in ida and find it's 2 function call 
+
+* reportError - Go to lua_tolstring addy in ida and go to the 4 xref and get it's parent function
+
+* resize - Go to setarrayvector addy in ida and go to the 2 xref and get it's parent function
+
+* resume - Go to luad_precall addy in ida and go to the 2 xref and get it's parent function
+
+* resume_error - Go to luas_newlstr addy in ida and go to the 8 xref and get it's parent function
+
+* retcheck - Go to f_call addy in ida and find it's 2 function call 
+
+* robloxextraspace__robloxextraspace - Go to rbx_sc_closestate addy in ida and find it's 8 function call 
+
+* sandboxthread - Go to lua_createtable addy in ida and go to the 8 xref and get it's parent function
+
+* setarrayvector - Go to luam_realloc addy in ida and go to the 8 xref and get it's parent function
+
+* setnodevector - Go to luam_realloc_ addy in ida and go to the 23 xref and get it's parent function
+
+* singlestep - Go to markroot addy in ida and go to the 2 xref and get it's parent function
+
+* spawn - Go to lua_newthread addy in ida and go to the 9 xref and get it's parent function
+
+* stack_init - Go to luam_realloc_ addy in ida and go to the 9 xref and get it's parent function
+
+* str_find_aux - Go to lual_optinteger addy in ida and go to the 16 xref and get it's parent function
+
+* tag_error - Go to lual_checkinteger addy in ida and find it's 2 function call 
+
+* 
+* taskscheduler - Go to rbx_taskscheduler_getlastcycletimestamp addy in ida and find it's 13 function call 
+
+* unbound_search - Go to luah_getnum addy in ida and go to the 12 xref and get it's parent function
+
+* vm_invoker - Go to luad_call addy in ida and find it's 2 function call 
+
+

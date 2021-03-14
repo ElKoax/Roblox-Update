@@ -1,0 +1,2998 @@
+{
+"version": "version-5c383cf6549b4c50", 
+"deploydate": "Sat Mar 13 12:21:33 2021
+", 
+"addresses": {
+"addinfo": {
+"addr": 20582480,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 81 EC 0 1 0 0 57",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"adjuststack": {
+"addr": 20536880,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D 8 83",
+"args": "int a1", 
+"mask": "........", 
+"typedef": "int" 
+},
+"arith": {
+"addr": 20631856,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"aux_upvalue": {
+"addr": 20526800,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"auxgetinfo": {
+"addr": 20582608,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 8B 75 C BB",
+"args": "std::uintptr_t a1, int a2, int a3, int a4, int a5", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"auxresume": {
+"addr": 20589696,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 57 8B 7D C 8A",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"call_bintm": {
+"addr": 20630032,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 53 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"call_ordertm": {
+"addr": 20630192,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 8 53",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"calltmres": {
+"addr": 20629696,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 10 56 8B 75 8 57",
+"args": "std::uintptr_t a1, int a2, int a3, int a4, int a5", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"close_state": {
+"addr": 20580976,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D 8 56",
+"args": "int a1", 
+"mask": "........", 
+"typedef": "int" 
+},
+"currentline": {
+"addr": 20583056,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 53",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"err_geterrorstring": {
+"addr": 9672288,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 8B 45 8 83",
+"args": "int a1", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"f_call": {
+"addr": 20526944,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 C FF",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"f_luaopen": {
+"addr": 20581136,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 57 8B 7D 8 8D",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"findfirstchild": {
+"addr": 6800016,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 83 EC 10 53 8B C1 56 57 89 45 F0 33 FF 8B 40 2C 85 C0 F 84",
+"args": "int a1, int a2", 
+"mask": ".......................", 
+"typedef": "int" 
+},
+"findfirstchildofclass": {
+"addr": 6800480,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 53 56 8B 71 2C 57 85 F6 F 84",
+"args": "int a1, int a2", 
+"mask": ".............", 
+"typedef": "int" 
+},
+"findlocal": {
+"addr": 20623168,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 8B 4D 8 33",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"fireclickdetector": {
+"addr": 12920912,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "std::uintptr_t a1, float a2, int a3", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"flog_getvalue": {
+"addr": 22642624,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 83 EC 1C 53 8B 5D 8 56",
+"args": "int a1, int a2, const char* a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"flog_setvalue": {
+"addr": 22644608,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1, int a2, int a3, const char* a4", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"getdatamodel": {
+"addr": 16363744,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1, int a2", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"getdatamodel2": {
+"addr": 16363408,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"getfunc": {
+"addr": 20587568,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 81 EC 20 1 0 0 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"getjobsbyname": {
+"addr": 16927760,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC E8 48 FD FF FF FF 75 C 8B",
+"args": "int a1, int a2", 
+"mask": "............", 
+"typedef": "int" 
+},
+"getnamecallmethod": {
+"addr": 20536992,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 57 8B 7D 8 8B",
+"args": "int a1", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"grabscriptcontext": {
+"addr": 6183392,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 51 53 56 8B F1 57 8B 7D C 8B",
+"args": "int a1, const char* a2, int a3", 
+"mask": ".............", 
+"typedef": "int" 
+},
+"grabglobalstateindex": {
+"addr": 7970960,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 56 57 6A 5 FF",
+"args": "int a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"growci": {
+"addr": 20540080,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 8B",
+"args": "int a1", 
+"mask": "........", 
+"typedef": "int" 
+},
+"hashnum": {
+"addr": 20624752,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D 10 81 E1 FF FF FF 7F 8B C1 C1 E8 12 33 45 C 53",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".....................", 
+"typedef": "int" 
+},
+"index2adr": {
+"addr": 20527024,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 81",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luaopen_base": {
+"addr": 20588608,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 56",
+"args": "int a1", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luaopen_table": {
+"addr": 20590416,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 68",
+"args": "int a1", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luaopen_bit32": {
+"addr": 20608896,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 68 F8 CB F7 1 68",
+"args": "int a1", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"lua_call": {
+"addr": 20527312,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_checkstack": {
+"addr": 20532240,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_close": {
+"addr": 20581504,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 8 83",
+"args": "int a1", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_concat": {
+"addr": 20527584,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_createtable": {
+"addr": 20527760,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 57 8B 7D 8 8B",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_error": {
+"addr": 20528064,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 6A 2 FF 75",
+"args": "int a1", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_freeobj": {
+"addr": 20617280,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C F B6",
+"args": "int a1", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_gc": {
+"addr": 20528080,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 C 53",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_getargument": {
+"addr": 20584288,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 C 53",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_getfenv": {
+"addr": 20528368,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_getfield": {
+"addr": 20528528,
+"ccv": "__stdcall",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 83",
+"args": "std::uintptr_t a1, int a2, const char* a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_getinfo": {
+"addr": 20584480,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 51 8B 55 10 53 8B 5D C 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "............", 
+"typedef": "int" 
+},
+"lua_getlocal": {
+"addr": 20584688,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 C 53",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_getmetatable": {
+"addr": 20528704,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_getstack": {
+"addr": 20584880,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C B8",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_gettable": {
+"addr": 20528896,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_gettop": {
+"addr": 20529024,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D 8 8B",
+"args": "int a1", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_getupvalue": {
+"addr": 20529056,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_insert": {
+"addr": 20529200,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_iscfunction": {
+"addr": 20529424,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 85",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_isnumber": {
+"addr": 20529504,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 83",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_isstring": {
+"addr": 20529600,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 85",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_isuserdata": {
+"addr": 20529344,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 85",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_lessthan": {
+"addr": 20529680,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 53",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_newstate": {
+"addr": 20581552,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 81 EC E0 0 0 0 53",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"lua_newthread": {
+"addr": 20529856,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 8B 75 8 8B",
+"args": "int a1", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"lua_newuserdata": {
+"addr": 20530000,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 8B",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_next": {
+"addr": 20530128,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_objlen": {
+"addr": 20530272,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_pcall": {
+"addr": 20530496,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D 14 83 EC 8 53",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"lua_pushboolean": {
+"addr": 20530688,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 33",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_pushcclosure": {
+"addr": 20530768,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 8B",
+"args": "std::uintptr_t a1, int a2, int a3, int a4, int a5", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_pushfstring": {
+"addr": 20530992,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 8B",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_pushinteger": {
+"addr": 20531104,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 66 F 6E",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "......", 
+"typedef": "int" 
+},
+"lua_pushlightuserdata": {
+"addr": 20531200,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_pushlstring": {
+"addr": 20531280,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 57 8B 7D 8 8B",
+"args": "std::uintptr_t a1, const char* a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_pushnil": {
+"addr": 20531408,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 8B",
+"args": "int a1", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_pushnumber": {
+"addr": 20531488,
+"ccv": "__thiscall",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC F 28",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".....", 
+"typedef": "int" 
+},
+"lua_pushstring": {
+"addr": 20531584,
+"ccv": "__stdcall",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 C 85",
+"args": "std::uintptr_t a1, const char* a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_pushthread": {
+"addr": 20531808,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 8B",
+"args": "int a1", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_pushvalue": {
+"addr": 20532016,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_pushvfstring": {
+"addr": 20532128,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 8B",
+"args": "std::uintptr_t a1, const char* a2, char* a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_rawequal": {
+"addr": 20532352,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 53",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_rawget": {
+"addr": 20532480,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_rawgeti": {
+"addr": 20532784,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_rawset": {
+"addr": 20532912,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 53",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_rawseti": {
+"addr": 20533120,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 53",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_rawvalue": {
+"addr": 20527232,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 85",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_remove": {
+"addr": 20533328,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_replace": {
+"addr": 20533472,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 57",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_resume": {
+"addr": 20541536,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 8A",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_setfenv": {
+"addr": 20533744,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 53",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_setfield": {
+"addr": 20533968,
+"ccv": "__stdcall",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 83",
+"args": "std::uintptr_t a1, int a2, const char* a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_setlocal": {
+"addr": 20585024,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 C 53",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_setmetatable": {
+"addr": 20534144,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_setreadonly": {
+"addr": 20534416,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_setsafeenv": {
+"addr": 20534528,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_settable": {
+"addr": 20534640,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_settop": {
+"addr": 20534768,
+"ccv": "__fastcall",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 56 57 8B FA 8B F1 C1 E7 4 85",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".............", 
+"typedef": "int" 
+},
+"lua_setupvalue": {
+"addr": 20534896,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 53",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_toboolean": {
+"addr": 20535088,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 85",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_tointeger": {
+"addr": 20535184,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 83",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_tolstring": {
+"addr": 20535312,
+"ccv": "__fastcall",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 51 53 56 8B DA 57 8B F9 85 DB 7E 1A 8B 47 1C 8B F3 C1 E6 4 83",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........................", 
+"typedef": "int" 
+},
+"lua_tonumber": {
+"addr": 20535616,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 83",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_topointer": {
+"addr": 20535760,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D 8 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_tostring": {
+"addr": 20535952,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 85",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_tothread": {
+"addr": 20536112,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 85",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_tounsignedx": {
+"addr": 20536192,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 83",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_touserdata": {
+"addr": 20536336,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 85",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_type": {
+"addr": 20536576,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 85",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_typename": {
+"addr": 20536640,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 C 83",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lua_xmove": {
+"addr": 20536752,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lua_yeild": {
+"addr": 20542144,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 66",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luaa_pushobject": {
+"addr": 20527200,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luab_auxwrap": {
+"addr": 20589824,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 68",
+"args": "int a1", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luac_barrierback": {
+"addr": 20617408,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luac_barrierf": {
+"addr": 20617440,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 8 83",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luac_fullgc": {
+"addr": 20618016,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 57 8B 7D 8 8D",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luac_link": {
+"addr": 20618240,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 8B",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luac_linkupval": {
+"addr": 20618288,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 83",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luac_step": {
+"addr": 20618416,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 54 8B 4D 8 B8",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luad_call": {
+"addr": 20539920,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 BA",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luad_growstack": {
+"addr": 20540176,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luad_pcall": {
+"addr": 20540224,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 8 53",
+"args": "std::uintptr_t a1, int a2, int a3, int a4, int a5", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luad_poscall": {
+"addr": 20579632,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 8 53",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luad_precall": {
+"addr": 20579760,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luad_rawrunprotected": {
+"addr": 20540528,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 6A FF 68 60 0 A3 1 64",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"luad_reallocci": {
+"addr": 20540848,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 C 53",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luad_reallocstack": {
+"addr": 20540976,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luad_seterrorObj": {
+"addr": 20541248,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 C 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luad_throw": {
+"addr": 20541360,
+"ccv": "__fastcall",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 14 8D 4D EC FF 75 C FF",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".............", 
+"typedef": "int" 
+},
+"luae_freethread": {
+"addr": 20581264,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luae_newthread": {
+"addr": 20581376,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 57 8B 7D 8 6A",
+"args": "int a1", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luaf_close": {
+"addr": 20622560,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 57 8B 7D 8 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luaf_findupval": {
+"addr": 20622704,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luaf_freeproto": {
+"addr": 20622912,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luaf_newcclosure": {
+"addr": 20623264,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D C 8B",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luaf_newlclosure": {
+"addr": 20623360,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D C 57",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luaf_newproto": {
+"addr": 20623472,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 57 6A 54 FF 75 8 E8",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luag_aritherror": {
+"addr": 20583200,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 57",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luag_breakpoint": {
+"addr": 20583312,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 53 56 57 8B 7D C 8B",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"luag_concaterror": {
+"addr": 20583712,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 56 57 FF 75 C 8B",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luag_forerrorl": {
+"addr": 20583776,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 FF 75 C FF",
+"args": "std::uintptr_t a1, int a2, const char* a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luag_getline": {
+"addr": 20583824,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 57 8B 7D 8 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luag_indexerror": {
+"addr": 20583888,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 8B 75 8 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luag_ordererror": {
+"addr": 20584048,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 56 8B 75 8 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luag_runerror": {
+"addr": 20584192,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 8D",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luag_typeerror": {
+"addr": 20633424,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luah_clone": {
+"addr": 20624992,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 57 8B 7D 8 6A",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luah_free": {
+"addr": 20623632,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luah_get": {
+"addr": 20625376,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 57 8B 7D C 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luah_getn": {
+"addr": 20625552,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 57 8B 7D 8 8B",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luah_getnum": {
+"addr": 20625680,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 83",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luah_getstr": {
+"addr": 20625904,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 8 53",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luah_new": {
+"addr": 20626016,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 57 8B 7D 8 6A",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luah_next": {
+"addr": 20626128,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC C 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luah_resizearray": {
+"addr": 20626608,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 8B",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luah_set": {
+"addr": 20626688,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 57 8B 7D 10 8B 47 C 83",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "............", 
+"typedef": "int" 
+},
+"luah_setnum": {
+"addr": 20626976,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 10 56 8B 75 10 57 8B 7D C 8D",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "...............", 
+"typedef": "int" 
+},
+"luah_setstr": {
+"addr": 20627088,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 10 56 8B 75 10 56 FF 75 C E8",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "...............", 
+"typedef": "int" 
+},
+"lual_addlstring": {
+"addr": 20537120,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D 10 85 DB 74 5B 8B 55 C 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "...............", 
+"typedef": "int" 
+},
+"lual_addvalue": {
+"addr": 20537232,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 57 8B 7D 8 8D",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"lual_argerror": {
+"addr": 20537376,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 56 8B 75 8 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"lual_buffinit": {
+"addr": 20537456,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D C 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lual_checkany": {
+"addr": 20537632,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 FF 75 C FF",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lual_checkinteger": {
+"addr": 20537696,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 8D 45 FC 50 FF 75 C FF",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "............", 
+"typedef": "int" 
+},
+"lual_checklstring": {
+"addr": 20537744,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC FF 75 10 8B 55 C 8B",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"lual_checknumber": {
+"addr": 20537792,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 8D 45 FC 50 FF 75 C FF",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "............", 
+"typedef": "int" 
+},
+"lual_checkstack": {
+"addr": 20537840,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 FF 75 C FF",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lual_checktype": {
+"addr": 20537904,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC FF 75 C FF",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"lual_checkunsigned": {
+"addr": 20537952,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 8D 45 FC 50 FF 75 C FF",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "............", 
+"typedef": "int" 
+},
+"lual_error": {
+"addr": 20538000,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 6A",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lual_findtable": {
+"addr": 20538048,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 8B 75 8 57",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"lual_getmetafield": {
+"addr": 20538288,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 FF 75 C 8B",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lual_newmetatable": {
+"addr": 20538384,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 FF 75 C 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lual_optinteger": {
+"addr": 20538480,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"lual_optlstring": {
+"addr": 20538560,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2, const char* a3, int a4", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lual_prepbuffer": {
+"addr": 20538784,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 57",
+"args": "int a1", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lual_pushresult": {
+"addr": 20538848,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 57 8B 7D 8 8B",
+"args": "int a1", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lual_ref": {
+"addr": 20538912,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 57",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lual_register": {
+"addr": 20539104,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 7D C 0 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"lual_typeerror": {
+"addr": 20539344,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 53 56 8B 75 8 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"lual_unref": {
+"addr": 20539504,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D 10 85 DB 78 47 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "................", 
+"typedef": "int" 
+},
+"lual_where": {
+"addr": 20539600,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 81 EC 20 1 0 0 8D",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luam_realloc": {
+"addr": 20634496,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D 8 53",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luam_realloc_": {
+"addr": 20634176,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D 8 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luam_toobig": {
+"addr": 20634768,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 C7 45 FC 82 1C 2C 2 8B",
+"args": "int a1", 
+"mask": "............", 
+"typedef": "int" 
+},
+"luao_chunkid": {
+"addr": 20542896,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D C 56",
+"args": "char* a1, const char* a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luao_pushfstring": {
+"addr": 20543280,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 81 EC 0 2 0 0 8D",
+"args": "std::uintptr_t a1, const char* a2, ...", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luao_pushvfstring": {
+"addr": 20543440,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 81 EC 0 2 0 0 8D",
+"args": "std::uintptr_t a1, const char* a2, char* a3", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luao_rawequalKey": {
+"addr": 20543600,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D 8 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luao_rawequalobj": {
+"addr": 20543728,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D 8 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luao_str2d": {
+"addr": 20543856,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 56 8B 75 8 8D",
+"args": "const char* a1, double* a2", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luas_newlstr": {
+"addr": 20623744,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 10 8B D0 53 56 8B F0 8B D8 C1 EE 5 46",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "..................", 
+"typedef": "int" 
+},
+"luas_newudata": {
+"addr": 20624000,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D C 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luas_resize": {
+"addr": 20624080,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D 8 83",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luat_gettm": {
+"addr": 20633376,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 FF 75 10 8B 75 8 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"luat_objtypename": {
+"addr": 20633712,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D 8 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luau_backtrace": {
+"addr": 20575040,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 6A FF 68 89 0 A3",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luau_betavm": {
+"addr": 20559664,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 E4 F0 81 EC 98 0 0 0 56",
+"args": "int a1", 
+"mask": ".............", 
+"typedef": "int" 
+},
+"luau_callhook": {
+"addr": 20576496,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 81 EC 20 1 0 0 53",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luau_calltm": {
+"addr": 20576208,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 57 8B 7D 8 B8",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luau_deserialize": {
+"addr": 20576896,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 6A FF 68 B0 0 A3",
+"args": "std::uintptr_t a1, const char* a2, const char* a3, int a4", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luau_execute": {
+"addr": 20729152,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 80 3D F4 82 70 2 0 74",
+"args": "std::uintptr_t a1, int a2, int a3, int a4, int a5, int a6", 
+"mask": "............", 
+"typedef": "int" 
+},
+"luau_loopforg": {
+"addr": 20579536,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luau_prepareforn": {
+"addr": 20580160,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 14 83 7E C 3 74",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": "............", 
+"typedef": "int" 
+},
+"luau_resolveimport": {
+"addr": 20580320,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D 14 83 EC 10 8B C1 C1 E8 1E 53 57 85 C0 74 D 8B",
+"args": "std::uintptr_t a1, int a2, int a3, int a4, int a5", 
+"mask": ".....................", 
+"typedef": "int" 
+},
+"luau_tryfunctm": {
+"addr": 20580736,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 56 8B 75 C 57",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"luav_concat": {
+"addr": 20630320,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 8 83",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luav_doarith": {
+"addr": 20631168,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 20 56 8B 75 10 57 8B 7D 14 8B 46 C 83",
+"args": "std::uintptr_t a1, int a2, int a3, int a4, int a5, int a6", 
+"mask": "..................", 
+"typedef": "int" 
+},
+"luav_dolen": {
+"addr": 20631680,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 10 8B 46 C 83",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"luav_execute": {
+"addr": 20544128,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 E4 F0 81 EC 98 0 0 0 56",
+"args": "int a1", 
+"mask": ".............", 
+"typedef": "int" 
+},
+"luav_gettable": {
+"addr": 20632176,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 51 53 56 8B 75 C 33",
+"args": "std::uintptr_t a1, int a2, int a3, int a4, int a5", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luav_gettable_opt": {
+"addr": 20632144,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 6A 1 FF 75",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luav_lessequal": {
+"addr": 20632448,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D 8 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luav_lessthan": {
+"addr": 20632608,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 4D 8 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luav_settable": {
+"addr": 20632768,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 18 53 8B 5D C 56",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"luav_tonumber": {
+"addr": 20633168,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 8 83",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"luav_tostring": {
+"addr": 20633264,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 20 56 8B 75 C 83",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"luavm_compile": {
+"addr": 7175536,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 56 8B 75 8 8B",
+"args": "int a1", 
+"mask": "........", 
+"typedef": "int" 
+},
+"luavm_load": {
+"addr": 7176880,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 D0 E2 95 1 64",
+"args": "int a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"luax_init": {
+"addr": 20633536,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 57 8B 7D 8 BE",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"luaz_openspace": {
+"addr": 20647984,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 10 56 8B 75 C 8B",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"mainposition": {
+"addr": 20627152,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC C 56",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"markmt": {
+"addr": 20619040,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 57 8B 7D 8 BB",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"markroot": {
+"addr": 20619264,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 57 8B 7D 8 8D",
+"args": "int a1", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"match": {
+"addr": 20603856,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 1C 53 8B 5D 8 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"newkey": {
+"addr": 20627472,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 10 53 8B 5D C 56",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"newlstr": {
+"addr": 20624304,
+"ccv": "__fastcall",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 14 53 56 8B 75 8 8B",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": "............", 
+"typedef": "int" 
+},
+"print": {
+"addr": 6729360,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 78 62 94 1 64",
+"args": "int a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"push_captures": {
+"addr": 20606304,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 8B 75 8 57",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"rbx_get_property": {
+"addr": 8779952,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 83 EC 8 8B",
+"args": "int a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"rbx_network_replicator_onreceive": {
+"addr": 18320240,
+"ccv": "__fastcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 53 16 A1 1 64",
+"args": "int a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_network_physicssenders2_sendpacket": {
+"addr": 19111360,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 70 AE A1 1 64",
+"args": "int a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_disable_report_screenshot_gl2": {
+"addr": 27183808,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "6A 1 68 8 9 3B",
+"args": "", 
+"mask": "......", 
+"typedef": "int" 
+},
+"rbx_disable_report_screenshot_gl": {
+"addr": 27183776,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "6A 1 68 0 9 3B",
+"args": "", 
+"mask": "......", 
+"typedef": "int" 
+},
+"rbx_disable_report_screenshot_metal": {
+"addr": 27183840,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "6A 1 68 10 9 3B",
+"args": "", 
+"mask": "......", 
+"typedef": "int" 
+},
+"rbx_disable_report_screenshot_vulkan": {
+"addr": 27183872,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "6A 1 68 18",
+"args": "", 
+"mask": "....", 
+"typedef": "int" 
+},
+"rbx_disable_report_screenshot_d3d": {
+"addr": 27183744,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "6A 1 68 F8",
+"args": "", 
+"mask": "....", 
+"typedef": "int" 
+},
+"rbx_setsimulationradius": {
+"addr": 19114384,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 83 E4 F8 51 56 8B 75 8 85",
+"args": "int a1, int a2", 
+"mask": "............", 
+"typedef": "int" 
+},
+"rbx_corescript_getluavmcorescriptfilepath": {
+"addr": 11346048,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 9E E9 9A 1 64",
+"args": "int a1, int a2, const char* a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_datastore_runtransformfunction": {
+"addr": 14454656,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 90 72 9E 1 64",
+"args": "", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_datamodel_dodatamodelsetup": {
+"addr": 7313680,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 D9 1E 96 1 64",
+"args": "int a1, int a2, int a3, int a4, int a5", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_debugvalueconverte_userdatatostring": {
+"addr": 12715328,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 0 20 9C 1 64",
+"args": "int a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_deu_uploadcrasheventfile": {
+"addr": 6469680,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 A5 10 95 1 64",
+"args": "int a1", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_lm_reporterror": {
+"addr": 6488608,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC F B7",
+"args": "int a1, int a2", 
+"mask": ".....", 
+"typedef": "int" 
+},
+"rbx_lua_dumpthreadrefcounts": {
+"addr": 8606640,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 51 80 3D BC E0 38 2 0 74",
+"args": "", 
+"mask": "............", 
+"typedef": "int" 
+},
+"rbx_network_replicator_processdeserializedpacket": {
+"addr": 18336752,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 EB 19 A1 1 64",
+"args": "int a1, int a2", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_network_server_registerlegalscript": {
+"addr": 18511840,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 40 42 A1 1 64",
+"args": "int a1, int a2", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_rcr_processexception": {
+"addr": 6488272,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 53 56 68 E8 C8 D8 1 6A",
+"args": "", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_sc_closestate": {
+"addr": 7952608,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 20 EF 96 1 64",
+"args": "int a1", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_taskscheduler_getlastcycletimestamp": {
+"addr": 16786592,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC E8 18 2 0 0 8B",
+"args": "int a1", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"rbx_lua_bridge_on_index": {
+"addr": 8786976,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"rbx_security_context_current": {
+"addr": 20520976,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "8B D D8 83 77",
+"args": "int a1", 
+"mask": ".....", 
+"typedef": "int" 
+},
+"rbx_datamodel_getjobsinfo": {
+"addr": 7328128,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 2E 22 96 1 64",
+"args": "int a1, int a2", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_sc_crash": {
+"addr": 7955392,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 51 56 8B 75 8 57",
+"args": "int a1", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"rbx_sc_interrupt": {
+"addr": 7977008,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 83 EC 10 56 8B 75 8 57",
+"args": "int a1", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_sc_loadstring": {
+"addr": 7979296,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"rbx_sc_scriptcontext": {
+"addr": 7924784,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 F1 E7 96 1 64",
+"args": "int a1", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_sc_startscript": {
+"addr": 8026960,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 8F 3 97",
+"args": "", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"rbx_sc_watchdog": {
+"addr": 8034208,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"rbx_scriptcontext_getcontext": {
+"addr": 7970400,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 8B 45 8 85",
+"args": "int a1", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"rbx_scriptcontext_debuggermanager": {
+"addr": 7957376,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"rbx_scriptcontext_pluginmanager": {
+"addr": 7991632,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"rbx_scriptcontext_usersettings": {
+"addr": 8033056,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"rbx_scriptcontext_settings": {
+"addr": 8023696,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"rbx_scriptcontext_getglobalstate": {
+"addr": 7971024,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 83 EC C 80",
+"args": "int a1", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"rbx_modulescript_vmstate": {
+"addr": 12784480,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 8D 45 8 81",
+"args": "int a1", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"rbx_modulescript_pervmstate_setcompletedsuccess": {
+"addr": 12783664,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 83 79 14 0 C7",
+"args": "int a1, int a2, int a3", 
+"mask": "........", 
+"typedef": "int" 
+},
+"rbx_modulescript_pervmstate_getandclearyieldedimporters": {
+"addr": 12782992,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 8B 55 8 53",
+"args": "int a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"rbx_scriptcontext_requiremodulescriptsuccesscontinuation": {
+"addr": 8014448,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 40 FF 96 1 64",
+"args": "int a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_setthreadname": {
+"addr": 16785040,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"rbx_serializer_loadinstances": {
+"addr": 8856640,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A 0 FF 75",
+"args": "int a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"rbx_scriptcontext_printcallstack": {
+"addr": 7992432,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1, int a2, const char* a3, int a4", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"rbx_serializer_loadinstances_long": {
+"addr": 8856672,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1, int a2, int a3", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"rbx_standardout_printwithlink": {
+"addr": 6728560,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1, int a2, int a3, int a4", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"rbx_ts_startscript": {
+"addr": 11649168,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 56 59 9B 1 64",
+"args": "int a1, int a2", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbx_ws_getrealphysicsfps": {
+"addr": 9590336,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 90 BD 98 1 64",
+"args": "int a1", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"rbxcrash": {
+"addr": 22689200,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 51 A1 64 55 77 2 56",
+"args": "int a1, int a2", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"reallymarkobject": {
+"addr": 20620144,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 C F B6",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"rehash": {
+"addr": 20627904,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "53 8B DC 83 EC 8 83",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"reportError": {
+"addr": 7975264,
+"ccv": "__stdcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 8B 4D C 83",
+"args": "int a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"resize": {
+"addr": 20628528,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 2C 56 8B 75 8 57",
+"args": "std::uintptr_t a1, int a2, int a3, int a4", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"resume": {
+"addr": 20542256,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 56 8B 75 8 80",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "........", 
+"typedef": "int" 
+},
+"resume_error": {
+"addr": 20542480,
+"ccv": "__cdecl",
+"retcheck": true,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 55 C 8B",
+"args": "int a1, const char* a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"retcheck": {
+"addr": 7177904,
+"ccv": "__fastcall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "int a1, int a2", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"robloxextraspace__robloxextraspace": {
+"addr": 7941360,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 56 8B F1 8B 46 C 8B",
+"args": "int a1, int a2", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"sandboxthread": {
+"addr": 8023248,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 80 3D 60 D5 38 2 0 56",
+"args": "int a1, int a2, int a3", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"setarrayvector": {
+"addr": 20629008,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 8B 5D 10 56 57 81 FB FF FF FF F 77",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "................", 
+"typedef": "int" 
+},
+"setnodevector": {
+"addr": 20629136,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 53 56 8B 75 10 57 85 F6 75 13 8B 4D C B8",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": ".................", 
+"typedef": "int" 
+},
+"singlestep": {
+"addr": 20620560,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 10 53 8B 5D 8 56",
+"args": "int a1", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"spawn": {
+"addr": 8024160,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 9F 1 97",
+"args": "int a1", 
+"mask": ".........", 
+"typedef": "int" 
+},
+"stack_init": {
+"addr": 20582304,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 57 68 C0 0 0 0 FF",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"str_find_aux": {
+"addr": 20606736,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 81 EC 34 1 0 0 53",
+"args": "std::uintptr_t a1, int a2", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"tag_error": {
+"addr": 20539728,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC FF 75 10 FF 75 8 E8",
+"args": "std::uintptr_t a1, int a2, int a3", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"trustCheck": {
+"addr": 22138144,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 64 A1 0 0 0 0 6A",
+"args": "const char* a1, char* a2,  int a3", 
+"mask": "..........", 
+"typedef": "int" 
+},
+"taskscheduler": {
+"addr": 16787136,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": false,
+"aob": "55 8B EC 6A FF 68 DE 6A A0 1 64",
+"args": "", 
+"mask": "...........", 
+"typedef": "int" 
+},
+"unbound_search": {
+"addr": 20629344,
+"ccv": "__cdecl",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 83 EC 8 8B",
+"args": "std::uintptr_t a1, int a2", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"vm_invoker": {
+"addr": 20576864,
+"ccv": "__thiscall",
+"retcheck": false,
+"isapartoflua": true,
+"aob": "55 8B EC 8B 45 8 80",
+"args": "int a1", 
+"mask": ".......", 
+"typedef": "int" 
+},
+"cum_check_bypass": {"addr": 22140956} ,"callcheck": {"addr": 6250080} ,"retcheckflag1": {"addr": 43848012} ,"retcheckflag2": {"addr": 43848252} ,"xorconst": {"addr": 43221616} ,"luao_nilobject": {"addr": 35306896} ,"luat_typenames": {"addr": 35312888} ,"kname": {"addr": 40937896} ,"op_index": {"addr": 20559268} ,"op_case_table": {"addr": 20558964} ,"retcheck_jmp": {"addr": 7177936} ,"trustcheck_bypass1": {"addr": 39692028} ,"scriptinstance": {"addr": 41564804} ,"scriptcontext": {"addr": 33419076} 
+}, 
+ "offsets" : { 
+"roblox_offsets": {
+"getnamecallmethod_offset":  100,
+"networked_dm":  1184,
+"Identity1":  24,
+"Identity2":  108
+},
+"luastate_offsets": {
+"ls_readonly":  6,
+"ls_base_ci":  36,
+"ls_ci":  16,
+"ls_saved_pc":  16,
+"ls_top":  20,
+"ls_base":  28
+},
+"globalstate_offsets": {
+"ls_gs_totalbytes":  76,
+"ls_gs_rootgc":  48,
+"ls_gs_mainthread":  344
+},
+"closure_offsets": {
+"ls_closure_isc":  6
+},
+"types": {
+"R_LUA_TNONE":  -1,
+"R_LUA_TUSERDATA":  6,
+"R_LUA_TFUNCTION":  7,
+"R_LUA_TSTRING":  5,
+"R_LUA_TBOOLEAN":  1,
+"R_LUA_TNUMBER":  3,
+"R_LUA_TTABLE":  8,
+"R_LUA_TNIL":  0,
+"R_LUA_TTHREAD":  9,
+"R_LUA_TVECTOR":  2,
+"R_LUA_TLIGHTUSERDATA":  4,
+"R_LUA_TPROTO":  10,
+"R_LUA_TUPVALUE":  11},
+"protos": {
+"proto_code":  20,
+"proto_sizecode":  56,
+"proto_p":  36,
+"proto_sizep":  64,
+"proto_k":  16,
+"proto_sizek":  68,
+"proto_lineinfo":  12,
+"proto_sizelineinfo":  52,
+"proto_locvars":  32,
+"proto_upvalues":  8,
+"proto_sizeupvalues":  60,
+"proto_lineinfo_opt":  72,
+"proto_is_vararg":  80,
+"proto_source":  24,
+"proto_nups":  82,
+"proto_size_locvars":  76,
+"proto_numparams":  81,
+"proto_maxstacksize":  83
+"proto_lastlinedefined":  40
+},
+"extras": {
+"ls_offset": 188,
+"ls_symbol": "-",
+"ls_syntax": 1,
+"gs_symbol": "-",
+"gs_offset": 8,
+"setiden_syntax": 0,
+"protoobf_symbol": "+",
+"protodeobf_symbol": "-" 
+}
+}
+}
+
