@@ -1,0 +1,976 @@
+#include <Windows.h> 
+
+#define addinfo_addr 0x01541450
+#define addinfo_CCV __cdecl
+
+#define adjuststack_addr 0x01535D20
+#define adjuststack_CCV __cdecl
+
+#define arith_addr 0x0154F460
+#define arith_CCV __cdecl
+
+#define appendarray_addr 0x005CE930
+#define appendarray_CCV __thiscall
+
+#define atomic_addr 0x0154ACE0
+#define atomic_CCV __cdecl
+
+#define aux_upvalue_addr 0x01533700
+#define aux_upvalue_CCV __cdecl
+
+#define auxgetinfo_addr 0x015414C0
+#define auxgetinfo_CCV __cdecl
+
+#define auxresume_addr 0x01542FF0
+#define auxresume_CCV __thiscall
+
+#define call_bintm_addr 0x0154EC50
+#define call_bintm_CCV __cdecl
+
+#define call_ordertm_addr 0x0154ECF0
+#define call_ordertm_CCV __cdecl
+
+#define calltmres_addr 0x0154EB00
+#define calltmres_CCV __cdecl
+
+#define cleartable_addr 0x0154ADB0
+#define cleartable_CCV __cdecl
+
+#define close_state_addr 0x01540DE0
+#define close_state_CCV __cdecl
+
+#define currentline_addr 0x01541660
+#define currentline_CCV __cdecl
+
+#define err_geterrorstring_addr 0x0094B2F0
+#define err_geterrorstring_CCV __cdecl
+
+#define f_call_addr 0x01533780
+#define f_call_CCV __cdecl
+
+#define f_luaopen_addr 0x01540E90
+#define f_luaopen_CCV __cdecl
+
+#define findfirstchild_addr 0x006811B0
+#define findfirstchild_CCV __thiscall
+
+#define findfirstchildofclass_addr 0x00681380
+#define findfirstchildofclass_CCV __stdcall
+
+#define findlocal_addr 0x0154D050
+#define findlocal_CCV __cdecl
+
+#define fireclickdetector_addr 0x00C55710
+#define fireclickdetector_CCV __thiscall
+
+#define flog_getvalue_addr 0x01745A80
+#define flog_getvalue_CCV __cdecl
+
+#define flog_setvalue_addr 0x01745D00
+#define flog_setvalue_CCV __cdecl
+
+#define getdatamodel_addr 0x00FB8290
+#define getdatamodel_CCV __thiscall
+
+#define getdatamodel2_addr 0x00FB8140
+#define getdatamodel2_CCV __cdecl
+
+#define getfunc_addr 0x01542790
+#define getfunc_CCV __cdecl
+
+#define getjobsbyname_addr 0x01045630
+#define getjobsbyname_CCV __cdecl
+
+#define getnamecallmethod_addr 0x01535D90
+#define getnamecallmethod_CCV __cdecl
+
+#define grabscriptcontext_addr 0x005E9BE0
+#define grabscriptcontext_CCV __thiscall
+
+#define grabglobalstateindex_addr 0x007A1DF0
+#define grabglobalstateindex_CCV __thiscall
+
+#define growci_addr 0x01536CE0
+#define growci_CCV __cdecl
+
+#define hashnum_addr 0x0154D7D0
+#define hashnum_CCV __cdecl
+
+#define index2adr_addr 0x015337D0
+#define index2adr_CCV __fastcall
+
+#define propagateall_addr 0x0154C090
+#define propagateall_CCV __cdecl
+
+#define propagatemark_addr 0x0154C2A0
+#define propagatemark_CCV __cdecl
+
+#define sweeplist_addr 0x0154C8A0
+#define sweeplist_CCV __cdecl
+
+#define luaopen_base_addr 0x01542BA0
+#define luaopen_base_CCV __cdecl
+
+#define luaopen_table_addr 0x015432D0
+#define luaopen_table_CCV __cdecl
+
+#define luaopen_bit32_addr 0x015490A0
+#define luaopen_bit32_CCV __cdecl
+
+#define lua_call_addr 0x015338D0
+#define lua_call_CCV __cdecl
+
+#define lua_checkstack_addr 0x01534BA0
+#define lua_checkstack_CCV __cdecl
+
+#define lua_close_addr 0x01541020
+#define lua_close_CCV __cdecl
+
+#define lua_concat_addr 0x015339E0
+#define lua_concat_CCV __cdecl
+
+#define lua_createtable_addr 0x01533A90
+#define lua_createtable_CCV __cdecl
+
+#define lua_error_addr 0x01533BC0
+#define lua_error_CCV __thiscall
+
+#define lua_freeobj_addr 0x0154B780
+#define lua_freeobj_CCV __cdecl
+
+#define lua_gc_addr 0x01533BD0
+#define lua_gc_CCV __cdecl
+
+#define lua_getargument_addr 0x01541B10
+#define lua_getargument_CCV __cdecl
+
+#define lua_getfenv_addr 0x01533CF0
+#define lua_getfenv_CCV __cdecl
+
+#define lua_getfield_addr 0x01533D90
+#define lua_getfield_CCV __fastcall
+
+#define lua_getinfo_addr 0x01541BE0
+#define lua_getinfo_CCV __cdecl
+
+#define lua_getlocal_addr 0x01541CC0
+#define lua_getlocal_CCV __cdecl
+
+#define lua_getmetatable_addr 0x01533E30
+#define lua_getmetatable_CCV __stdcall
+
+#define lua_gettable_addr 0x01533EF0
+#define lua_gettable_CCV __cdecl
+
+#define lua_gettop_addr 0x01533F60
+#define lua_gettop_CCV __cdecl
+
+#define lua_getupvalue_addr 0x01533F80
+#define lua_getupvalue_CCV __cdecl
+
+#define lua_insert_addr 0x01534010
+#define lua_insert_CCV __cdecl
+
+#define lua_iscfunction_addr 0x015340E0
+#define lua_iscfunction_CCV __cdecl
+
+#define lua_isnumber_addr 0x01534130
+#define lua_isnumber_CCV __cdecl
+
+#define lua_isstring_addr 0x01534190
+#define lua_isstring_CCV __cdecl
+
+#define lua_isuserdata_addr 0x01534090
+#define lua_isuserdata_CCV __cdecl
+
+#define lua_lessthan_addr 0x015341E0
+#define lua_lessthan_CCV __cdecl
+
+#define lua_newstate_addr 0x01541050
+#define lua_newstate_CCV __cdecl
+
+#define lua_newthread_addr 0x01534290
+#define lua_newthread_CCV __cdecl
+
+#define lua_newuserdata_addr 0x01534320
+#define lua_newuserdata_CCV __cdecl
+
+#define lua_next_addr 0x015343A0
+#define lua_next_CCV __cdecl
+
+#define lua_objlen_addr 0x01534430
+#define lua_objlen_CCV __cdecl
+
+#define lua_pcall_addr 0x01534510
+#define lua_pcall_CCV __cdecl
+
+#define lua_pushboolean_addr 0x015345D0
+#define lua_pushboolean_CCV __cdecl
+
+#define lua_pushcclosure_addr 0x01534620
+#define lua_pushcclosure_CCV __stdcall
+
+#define lua_pushfstring_addr 0x01534700
+#define lua_pushfstring_CCV __cdecl
+
+#define lua_pushinteger_addr 0x01534770
+#define lua_pushinteger_CCV __cdecl
+
+#define lua_pushlightuserdata_addr 0x015347D0
+#define lua_pushlightuserdata_CCV __cdecl
+
+#define lua_pushlstring_addr 0x01534820
+#define lua_pushlstring_CCV __cdecl
+
+#define lua_pushnil_addr 0x015348A0
+#define lua_pushnil_CCV __cdecl
+
+#define lua_pushnumber_addr 0x015348F0
+#define lua_pushnumber_CCV __stdcall
+
+#define lua_pushstring_addr 0x01534950
+#define lua_pushstring_CCV __fastcall
+
+#define lua_pushthread_addr 0x015349F0
+#define lua_pushthread_CCV __cdecl
+
+#define lua_pushvalue_addr 0x01534AC0
+#define lua_pushvalue_CCV __stdcall
+
+#define lua_pushvfstring_addr 0x01534B30
+#define lua_pushvfstring_CCV __cdecl
+
+#define lua_rawequal_addr 0x01534C10
+#define lua_rawequal_CCV __cdecl
+
+#define lua_rawget_addr 0x01534C90
+#define lua_rawget_CCV __cdecl
+
+#define lua_rawgeti_addr 0x01534DB0
+#define lua_rawgeti_CCV __cdecl
+
+#define lua_rawset_addr 0x01534E30
+#define lua_rawset_CCV __cdecl
+
+#define lua_rawseti_addr 0x01534F00
+#define lua_rawseti_CCV __cdecl
+
+#define lua_rawvalue_addr 0x01533880
+#define lua_rawvalue_CCV __cdecl
+
+#define lua_remove_addr 0x01534FD0
+#define lua_remove_CCV __cdecl
+
+#define lua_replace_addr 0x01535060
+#define lua_replace_CCV __cdecl
+
+#define lua_resume_addr 0x01537260
+#define lua_resume_CCV __cdecl
+
+#define lua_setfenv_addr 0x01535160
+#define lua_setfenv_CCV __cdecl
+
+#define lua_setfield_addr 0x01535230
+#define lua_setfield_CCV __stdcall
+
+#define lua_setlocal_addr 0x01541D90
+#define lua_setlocal_CCV __cdecl
+
+#define lua_setmetatable_addr 0x015352E0
+#define lua_setmetatable_CCV __cdecl
+
+#define lua_setreadonly_addr 0x015353F0
+#define lua_setreadonly_CCV __cdecl
+
+#define lua_setsafeenv_addr 0x01535460
+#define lua_setsafeenv_CCV __cdecl
+
+#define lua_settable_addr 0x015354D0
+#define lua_settable_CCV __cdecl
+
+#define lua_settop_addr 0x01535550
+#define lua_settop_CCV __cdecl
+
+#define lua_setupvalue_addr 0x015355D0
+#define lua_setupvalue_CCV __cdecl
+
+#define lua_toboolean_addr 0x01535680
+#define lua_toboolean_CCV __cdecl
+
+#define lua_tointeger_addr 0x015356D0
+#define lua_tointeger_CCV __cdecl
+
+#define lua_tolstring_addr 0x01535750
+#define lua_tolstring_CCV __fastcall
+
+#define lua_tonumber_addr 0x01535880
+#define lua_tonumber_CCV __cdecl
+
+#define lua_topointer_addr 0x01535900
+#define lua_topointer_CCV __cdecl
+
+#define lua_tostring_addr 0x015359C0
+#define lua_tostring_CCV __cdecl
+
+#define lua_tothread_addr 0x01535A40
+#define lua_tothread_CCV __cdecl
+
+#define lua_tounsignedx_addr 0x01535A80
+#define lua_tounsignedx_CCV __cdecl
+
+#define lua_touserdata_addr 0x01535B10
+#define lua_touserdata_CCV __cdecl
+
+#define lua_type_addr 0x01535C00
+#define lua_type_CCV __cdecl
+
+#define lua_typename_addr 0x01535C40
+#define lua_typename_CCV __cdecl
+
+#define lua_xmove_addr 0x01535CA0
+#define lua_xmove_CCV __cdecl
+
+#define lua_yeild_addr 0x015374C0
+#define lua_yeild_CCV __cdecl
+
+#define luaa_pushobject_addr 0x01533860
+#define luaa_pushobject_CCV __cdecl
+
+#define luab_auxwrap_addr 0x015430D0
+#define luab_auxwrap_CCV __cdecl
+
+#define luac_barrierback_addr 0x0154B800
+#define luac_barrierback_CCV __cdecl
+
+#define luac_barrierf_addr 0x0154B820
+#define luac_barrierf_CCV __cdecl
+
+#define luac_fullgc_addr 0x0154BB00
+#define luac_fullgc_CCV __cdecl
+
+#define luac_link_addr 0x0154BBF0
+#define luac_link_CCV __cdecl
+
+#define luac_linkupval_addr 0x0154BC20
+#define luac_linkupval_CCV __cdecl
+
+#define luac_step_addr 0x0154BCA0
+#define luac_step_CCV __cdecl
+
+#define luad_call_addr 0x01536C40
+#define luad_call_CCV __cdecl
+
+#define luad_growstack_addr 0x01536D40
+#define luad_growstack_CCV __cdecl
+
+#define luad_pcall_addr 0x01536D70
+#define luad_pcall_CCV __cdecl
+
+#define luad_poscall_addr 0x015408A0
+#define luad_poscall_CCV __cdecl
+
+#define luad_precall_addr 0x01540930
+#define luad_precall_CCV __cdecl
+
+#define luad_rawrunprotected_addr 0x01536E50
+#define luad_rawrunprotected_CCV __cdecl
+
+#define luad_reallocci_addr 0x01536F90
+#define luad_reallocci_CCV __cdecl
+
+#define luad_reallocstack_addr 0x01537010
+#define luad_reallocstack_CCV __cdecl
+
+#define luad_seterrorObj_addr 0x01537120
+#define luad_seterrorObj_CCV __cdecl
+
+#define luad_throw_addr 0x015371B0
+#define luad_throw_CCV __fastcall
+
+#define luae_freethread_addr 0x01540F10
+#define luae_freethread_CCV __cdecl
+
+#define luae_newthread_addr 0x01540F90
+#define luae_newthread_CCV __cdecl
+
+#define luaf_close_addr 0x0154CDA0
+#define luaf_close_CCV __cdecl
+
+#define luaf_findupval_addr 0x0154CE30
+#define luaf_findupval_CCV __cdecl
+
+#define luaf_freeproto_addr 0x0154CF20
+#define luaf_freeproto_CCV __cdecl
+
+#define luaf_newcclosure_addr 0x0154D0A0
+#define luaf_newcclosure_CCV __cdecl
+
+#define luaf_newlclosure_addr 0x0154D100
+#define luaf_newlclosure_CCV __cdecl
+
+#define luaf_newproto_addr 0x0154D170
+#define luaf_newproto_CCV __cdecl
+
+#define luag_aritherror_addr 0x01541700
+#define luag_aritherror_CCV __cdecl
+
+#define luag_breakpoint_addr 0x01541770
+#define luag_breakpoint_CCV __cdecl
+
+#define luag_concaterror_addr 0x015418C0
+#define luag_concaterror_CCV __cdecl
+
+#define luag_forerrorl_addr 0x01541900
+#define luag_forerrorl_CCV __cdecl
+
+#define luag_getline_addr 0x01541930
+#define luag_getline_CCV __cdecl
+
+#define luag_indexerror_addr 0x01541970
+#define luag_indexerror_CCV __cdecl
+
+#define luag_ordererror_addr 0x01541A20
+#define luag_ordererror_CCV __cdecl
+
+#define luag_runerror_addr 0x01541AB0
+#define luag_runerror_CCV __cdecl
+
+#define luag_typeerror_addr 0x0154FA80
+#define luag_typeerror_CCV __cdecl
+
+#define luah_clone_addr 0x0154D8B0
+#define luah_clone_CCV __cdecl
+
+#define luah_free_addr 0x0154D420
+#define luah_free_CCV __cdecl
+
+#define luah_get_addr 0x0154DA40
+#define luah_get_CCV __cdecl
+
+#define luah_getn_addr 0x0154DAF0
+#define luah_getn_CCV __cdecl
+
+#define luah_getnum_addr 0x0154DB70
+#define luah_getnum_CCV __cdecl
+
+#define luah_getstr_addr 0x0154DC50
+#define luah_getstr_CCV __cdecl
+
+#define luah_new_addr 0x0154DCB0
+#define luah_new_CCV __cdecl
+
+#define luah_next_addr 0x0154DD20
+#define luah_next_CCV __cdecl
+
+#define luah_resizearray_addr 0x0154DF00
+#define luah_resizearray_CCV __cdecl
+
+#define luah_set_addr 0x0154DF50
+#define luah_set_CCV __cdecl
+
+#define luah_setnum_addr 0x0154E070
+#define luah_setnum_CCV __cdecl
+
+#define luah_setstr_addr 0x0154E0E0
+#define luah_setstr_CCV __cdecl
+
+#define lual_addlstring_addr 0x01535E50
+#define lual_addlstring_CCV __cdecl
+
+#define lual_addvalue_addr 0x01535F30
+#define lual_addvalue_CCV __cdecl
+
+#define lual_argerror_addr 0x01535FB0
+#define lual_argerror_CCV __cdecl
+
+#define lual_buffinit_addr 0x01536030
+#define lual_buffinit_CCV __cdecl
+
+#define lual_checkany_addr 0x01536130
+#define lual_checkany_CCV __cdecl
+
+#define lual_checkinteger_addr 0x01536170
+#define lual_checkinteger_CCV __cdecl
+
+#define lual_checklstring_addr 0x015361A0
+#define lual_checklstring_CCV __cdecl
+
+#define lual_checknumber_addr 0x015361D0
+#define lual_checknumber_CCV __cdecl
+
+#define lual_checkstack_addr 0x01536200
+#define lual_checkstack_CCV __thiscall
+
+#define lual_checktype_addr 0x01536240
+#define lual_checktype_CCV __cdecl
+
+#define lual_checkunsigned_addr 0x01536270
+#define lual_checkunsigned_CCV __cdecl
+
+#define lual_error_addr 0x015362A0
+#define lual_error_CCV __cdecl
+
+#define lual_findtable_addr 0x015363A0
+#define lual_findtable_CCV __cdecl
+
+#define lual_getmetafield_addr 0x01536490
+#define lual_getmetafield_CCV __cdecl
+
+#define lual_newmetatable_addr 0x015364F0
+#define lual_newmetatable_CCV __cdecl
+
+#define lual_optinteger_addr 0x01536550
+#define lual_optinteger_CCV __cdecl
+
+#define lual_optlstring_addr 0x015365A0
+#define lual_optlstring_CCV __cdecl
+
+#define lual_prepbuffer_addr 0x01536680
+#define lual_prepbuffer_CCV __cdecl
+
+#define lual_pushresult_addr 0x01536760
+#define lual_pushresult_CCV __cdecl
+
+#define lual_ref_addr 0x01536850
+#define lual_ref_CCV __cdecl
+
+#define lual_register_addr 0x01536900
+#define lual_register_CCV __cdecl
+
+#define lual_typeerror_addr 0x01536A10
+#define lual_typeerror_CCV __cdecl
+
+#define lual_unref_addr 0x01536AB0
+#define lual_unref_CCV __cdecl
+
+#define lual_where_addr 0x01536B10
+#define lual_where_CCV __cdecl
+
+#define luam_realloc_addr 0x0154FFE1
+#define luam_realloc_CCV __cdecl
+
+#define luam_realloc__addr 0x0154FD90
+#define luam_realloc__CCV __cdecl
+
+#define luam_toobig_addr 0x0154FFF0
+#define luam_toobig_CCV __thiscall
+
+#define luao_chunkid_addr 0x015377B0
+#define luao_chunkid_CCV __cdecl
+
+#define luao_pushfstring_addr 0x01537930
+#define luao_pushfstring_CCV __cdecl
+
+#define luao_pushvfstring_addr 0x015379D0
+#define luao_pushvfstring_CCV __cdecl
+
+#define luao_rawequalKey_addr 0x01537A70
+#define luao_rawequalKey_CCV __cdecl
+
+#define luao_rawequalobj_addr 0x01537AF0
+#define luao_rawequalobj_CCV __cdecl
+
+#define luao_str2d_addr 0x01537B70
+#define luao_str2d_CCV __cdecl
+
+#define luas_newlstr_addr 0x0154D4A0
+#define luas_newlstr_CCV __stdcall
+
+#define luas_newudata_addr 0x0154D680
+#define luas_newudata_CCV __cdecl
+
+#define luas_resize_addr 0x0154D6D0
+#define luas_resize_CCV __cdecl
+
+#define luat_gettm_addr 0x0154FA50
+#define luat_gettm_CCV __cdecl
+
+#define luat_objtypename_addr 0x0154FBA0
+#define luat_objtypename_CCV __cdecl
+
+#define luau_backtrace_addr 0x0153F6F0
+#define luau_backtrace_CCV __cdecl
+
+#define luau_betavm_addr 0x0153B9C0
+#define luau_betavm_CCV __cdecl
+
+#define luau_callhook_addr 0x0153FCA0
+#define luau_callhook_CCV __cdecl
+
+#define luau_calltm_addr 0x0153FB80
+#define luau_calltm_CCV __cdecl
+
+#define luau_deserialize_addr 0x0153FE20
+#define luau_deserialize_CCV __cdecl
+
+#define luau_execute_addr 0x01567C50
+#define luau_execute_CCV __cdecl
+
+#define luau_loopforg_addr 0x01540830
+#define luau_loopforg_CCV __cdecl
+
+#define luau_prepareforn_addr 0x01540AB0
+#define luau_prepareforn_CCV __cdecl
+
+#define luau_resolveimport_addr 0x01540B50
+#define luau_resolveimport_CCV __cdecl
+
+#define luau_tryfunctm_addr 0x01540CF0
+#define luau_tryfunctm_CCV __cdecl
+
+#define luav_concat_addr 0x0154ED80
+#define luav_concat_CCV __cdecl
+
+#define luav_doarith_addr 0x0154F1A0
+#define luav_doarith_CCV __thiscall
+
+#define luav_dolen_addr 0x01553630
+#define luav_dolen_CCV __cdecl
+
+#define luav_execute_addr 0x01537CB0
+#define luav_execute_CCV __cdecl
+
+#define luav_gettable_addr 0x0154F5A0
+#define luav_gettable_CCV __cdecl
+
+#define luav_gettable_opt_addr 0x0154F580
+#define luav_gettable_opt_CCV __cdecl
+
+#define luav_lessequal_addr 0x0154F6B0
+#define luav_lessequal_CCV __cdecl
+
+#define luav_lessthan_addr 0x0154F750
+#define luav_lessthan_CCV __cdecl
+
+#define luav_settable_addr 0x0154F7F0
+#define luav_settable_CCV __cdecl
+
+#define luav_tonumber_addr 0x0154F980
+#define luav_tonumber_CCV __cdecl
+
+#define luav_tostring_addr 0x0154F9E0
+#define luav_tostring_CCV __cdecl
+
+#define luavm_compile_addr 0x006DF720
+#define luavm_compile_CCV __cdecl
+
+#define luavm_load_addr 0x006DFC60
+#define luavm_load_CCV __cdecl
+
+#define luax_init_addr 0x0154FAF0
+#define luax_init_CCV __cdecl
+
+#define luaz_openspace_addr 0x015536A0
+#define luaz_openspace_CCV __cdecl
+
+#define mainposition_addr 0x0154E120
+#define mainposition_CCV __cdecl
+
+#define markmt_addr 0x0154BF10
+#define markmt_CCV __cdecl
+
+#define markroot_addr 0x0154C000
+#define markroot_CCV __cdecl
+
+#define match_addr 0x01546B90
+#define match_CCV __cdecl
+
+#define newkey_addr 0x0154E260
+#define newkey_CCV __cdecl
+
+#define print_addr 0x0066FA90
+#define print_CCV __cdecl
+
+#define push_captures_addr 0x015475E0
+#define push_captures_CCV __cdecl
+
+#define push_instance_addr 0x0086D030
+#define push_instance_CCV __cdecl
+
+#define rbx_get_property_addr 0x0086AFC0
+#define rbx_get_property_CCV __thiscall
+
+#define rbx_network_replicator_onreceive_addr 0x0130EDD0
+#define rbx_network_replicator_onreceive_CCV __fastcall
+
+#define rbx_network_physicssenders2_sendpacket_addr 0x013D3270
+#define rbx_network_physicssenders2_sendpacket_CCV __thiscall
+
+#define rbx_disable_report_screenshot_gl2_addr 0x01155200
+#define rbx_disable_report_screenshot_gl2_CCV __cdecl
+
+#define rbx_disable_report_screenshot_gl_addr 0x011551E0
+#define rbx_disable_report_screenshot_gl_CCV __cdecl
+
+#define rbx_disable_report_screenshot_metal_addr 0x01155220
+#define rbx_disable_report_screenshot_metal_CCV __cdecl
+
+#define rbx_disable_report_screenshot_vulkan_addr 0x01155240
+#define rbx_disable_report_screenshot_vulkan_CCV __cdecl
+
+#define rbx_disable_report_screenshot_d3d_addr 0x011551C0
+#define rbx_disable_report_screenshot_d3d_CCV __cdecl
+
+#define rbx_setsimulationradius_addr 0x013D3ED0
+#define rbx_setsimulationradius_CCV __thiscall
+
+#define rbx_corescript_getluavmcorescriptfilepath_addr 0x00AE94A0
+#define rbx_corescript_getluavmcorescriptfilepath_CCV __cdecl
+
+#define rbx_datastore_runtransformfunction_addr 0x00CE1520
+#define rbx_datastore_runtransformfunction_CCV __stdcall
+
+#define rbx_datamodel_dodatamodelsetup_addr 0x00702400
+#define rbx_datamodel_dodatamodelsetup_CCV __cdecl
+
+#define rbx_debugvalueconverte_userdatatostring_addr 0x00C236A0
+#define rbx_debugvalueconverte_userdatatostring_CCV __cdecl
+
+#define rbx_deu_uploadcrasheventfile_addr 0x006305F0
+#define rbx_deu_uploadcrasheventfile_CCV __cdecl
+
+#define rbx_lm_reporterror_addr 0x00634EC0
+#define rbx_lm_reporterror_CCV __cdecl
+
+#define rbx_lua_dumpthreadrefcounts_addr 0x00840720
+#define rbx_lua_dumpthreadrefcounts_CCV __cdecl
+
+#define rbx_network_replicator_processdeserializedpacket_addr 0x01312C50
+#define rbx_network_replicator_processdeserializedpacket_CCV __thiscall
+
+#define rbx_network_server_registerlegalscript_addr 0x0133D480
+#define rbx_network_server_registerlegalscript_CCV __thiscall
+
+#define rbx_rcr_processexception_addr 0x00634D70
+#define rbx_rcr_processexception_CCV __stdcall
+
+#define rbx_sc_closestate_addr 0x0079D690
+#define rbx_sc_closestate_CCV __stdcall
+
+#define rbx_taskscheduler_getlastcycletimestamp_addr 0x01021ED0
+#define rbx_taskscheduler_getlastcycletimestamp_CCV __cdecl
+
+#define rbx_lua_bridge_on_index_addr 0x0086CB20
+#define rbx_lua_bridge_on_index_CCV __cdecl
+
+#define rbx_security_context_current_addr 0x01531FC0
+#define rbx_security_context_current_CCV __thiscall
+
+#define rbx_datamodel_getjobsinfo_addr 0x00705E80
+#define rbx_datamodel_getjobsinfo_CCV __thiscall
+
+#define rbx_sc_crash_addr 0x0079E110
+#define rbx_sc_crash_CCV __cdecl
+
+#define rbx_sc_interrupt_addr 0x007A3BC0
+#define rbx_sc_interrupt_CCV __cdecl
+
+#define rbx_sc_loadstring_addr 0x007A44B0
+#define rbx_sc_loadstring_CCV __cdecl
+
+#define rbx_sc_scriptcontext_addr 0x00796DE0
+#define rbx_sc_scriptcontext_CCV __thiscall
+
+#define rbx_sc_startscript_addr 0x007AFD80
+#define rbx_sc_startscript_CCV __stdcall
+
+#define rbx_sc_watchdog_addr 0x007B19E0
+#define rbx_sc_watchdog_CCV __thiscall
+
+#define rbx_scriptcontext_getcontext_addr 0x007BB6A0
+#define rbx_scriptcontext_getcontext_CCV __cdecl
+
+#define rbx_scriptcontext_debuggermanager_addr 0x0079E910
+#define rbx_scriptcontext_debuggermanager_CCV __cdecl
+
+#define rbx_scriptcontext_pluginmanager_addr 0x007A7400
+#define rbx_scriptcontext_pluginmanager_CCV __cdecl
+
+#define rbx_scriptcontext_usersettings_addr 0x007B1570
+#define rbx_scriptcontext_usersettings_CCV __cdecl
+
+#define rbx_scriptcontext_settings_addr 0x007AF090
+#define rbx_scriptcontext_settings_CCV __cdecl
+
+#define rbx_scriptcontext_getglobalstate_addr 0x007A1E30
+#define rbx_scriptcontext_getglobalstate_CCV __cdecl
+
+#define rbx_modulescript_vmstate_addr 0x00C33B80
+#define rbx_modulescript_vmstate_CCV __stdcall
+
+#define rbx_modulescript_pervmstate_setcompletedsuccess_addr 0x00C33860
+#define rbx_modulescript_pervmstate_setcompletedsuccess_CCV __thiscall
+
+#define rbx_modulescript_pervmstate_getandclearyieldedimporters_addr 0x00C335C0
+#define rbx_modulescript_pervmstate_getandclearyieldedimporters_CCV __thiscall
+
+#define rbx_scriptcontext_requiremodulescriptsuccesscontinuation_addr 0x007ACAC0
+#define rbx_scriptcontext_requiremodulescriptsuccesscontinuation_CCV __cdecl
+
+#define rbx_setthreadname_addr 0x010218C0
+#define rbx_setthreadname_CCV __cdecl
+
+#define rbx_serializer_loadinstances_addr 0x0087DA30
+#define rbx_serializer_loadinstances_CCV __cdecl
+
+#define rbx_scriptcontext_printcallstack_addr 0x007A7660
+#define rbx_scriptcontext_printcallstack_CCV __cdecl
+
+#define rbx_serializer_loadinstances_long_addr 0x0087DA50
+#define rbx_serializer_loadinstances_long_CCV __cdecl
+
+#define rbx_standardout_printwithlink_addr 0x0066F790
+#define rbx_standardout_printwithlink_CCV __cdecl
+
+#define rbx_ts_startscript_addr 0x00B33650
+#define rbx_ts_startscript_CCV __thiscall
+
+#define rbx_ws_getrealphysicsfps_addr 0x00937230
+#define rbx_ws_getrealphysicsfps_CCV __thiscall
+
+#define rbxcrash_addr 0x01750EF0
+#define rbxcrash_CCV __cdecl
+
+#define reallymarkobject_addr 0x0154C510
+#define reallymarkobject_CCV __cdecl
+
+#define rehash_addr 0x0154E410
+#define rehash_CCV __cdecl
+
+#define reportError_addr 0x007A34C0
+#define reportError_CCV __stdcall
+
+#define resize_addr 0x0154E670
+#define resize_CCV __cdecl
+
+#define resume_addr 0x01537530
+#define resume_CCV __cdecl
+
+#define resume_error_addr 0x01537610
+#define resume_error_CCV __cdecl
+
+#define retcheck_addr 0x006E0060
+#define retcheck_CCV __fastcall
+
+#define robloxextraspace__robloxextraspace_addr 0x0079AA70
+#define robloxextraspace__robloxextraspace_CCV __thiscall
+
+#define sandboxthread_addr 0x007AEED0
+#define sandboxthread_CCV __cdecl
+
+#define setarrayvector_addr 0x0154E850
+#define setarrayvector_CCV __cdecl
+
+#define setnodevector_addr 0x0154E8D0
+#define setnodevector_CCV __cdecl
+
+#define singlestep_addr 0x0154C6B0
+#define singlestep_CCV __cdecl
+
+#define spawn_addr 0x007AF260
+#define spawn_CCV __cdecl
+
+#define stack_init_addr 0x01541390
+#define stack_init_CCV __cdecl
+
+#define str_find_aux_addr 0x01547920
+#define str_find_aux_CCV __cdecl
+
+#define tag_error_addr 0x01536B80
+#define tag_error_CCV __cdecl
+
+#define trustCheck_addr 0x016C7B60
+#define trustCheck_CCV __cdecl
+
+#define taskscheduler_addr 0x010220F0
+#define taskscheduler_CCV __cdecl
+
+#define unbound_search_addr 0x0154E9A0
+#define unbound_search_CCV __cdecl
+
+#define vm_invoker_addr 0x0153FE00
+#define vm_invoker_CCV __thiscall
+
+#define cum_check_bypass 0x016C6AC7
+
+#define callcheck 0x005FA570
+
+#define retcheckflag1 0x02A3214C
+
+#define retcheckflag2 0x02A3223C
+
+#define xorconst 0x029B7830
+
+#define luao_nilobject 0x02226088
+
+#define luat_typenames 0x02227A60
+
+#define kname 0x027689B8
+
+#define op_index 0x0153B708
+
+#define op_case_table 0x0153B838
+
+#define retcheck_jmp 0x006E0080
+
+#define trustcheck_bypass1 0x02636CD4
+
+#define scriptinstance 0x028024A8
+
+#define scriptcontext 0x0202E5C0
+
+
+#define getnamecallmethod_offset 104
+#define networked_dm 1184
+#define Identity1 24
+#define Identity2 116
+
+#define ls_readonly 11
+#define ls_base_ci 36
+#define ls_ci 28
+#define ls_saved_pc 16
+#define ls_top 16
+#define ls_base 20
+#define ls_env 88
+#define ls_l_gt 64
+
+#define ls_gs_totalbytes 76
+#define ls_gs_rootgc 36
+#define ls_gs_mainthread 1288
+
+#define ls_closure_nupvalues 5
+#define ls_closure_isc 7
+
+#define R_LUA_TNONE  -1
+#define R_LUA_TUSERDATA  7
+#define R_LUA_TFUNCTION  6
+#define R_LUA_TSTRING  5
+#define R_LUA_TBOOLEAN  1
+#define R_LUA_TNUMBER  2
+#define R_LUA_TTABLE  8
+#define R_LUA_TNIL  0
+#define R_LUA_TTHREAD  9
+#define R_LUA_TVECTOR  3
+#define R_LUA_TLIGHTUSERDATA  4
+#define R_LUA_TPROTO  10
+#define R_LUA_TUPVALUE  11
+
+#define proto_k 20
+#define proto_sizek 76
+#define proto_code 12
+#define proto_sizep 60
+#define proto_locvars 28
+#define proto_sizecode 68
+#define proto_sizeupvalues 52
+#define proto_maxstacksize 82
+#define proto_sizelineinfo 80
+#define proto_upvalues 56
+#define proto_size_locvars 16
+#define proto_source 36
+#define proto_numparams 80
+DWORD RBX_LuaState(DWORD ScriptContext) { return  (ScriptContext +188) + *(DWORD*)(ScriptContext + 188);} 
+DWORD RBX_GlobalState(DWORD LS) { return (LS +0) -  *(DWORD*)(LS + 0);} 
+DWORD RBX_SetIdentity(DWORD LS, int identity) { *(DWORD*)(*(DWORD*)(LS + 116) + 24)  = identity; return 0; } 
+int RBX_ProtoObfuscate (int p, int v){ *(int*)p = p ^ v; return 0; }
+int RBX_ProtoDeobfuscate (int p){ return *(int*)p + p; } 
+
